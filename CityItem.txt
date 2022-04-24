@@ -1,0 +1,10 @@
+Austin	8.00
+Austin	8.00
+Houston	12.99
+Houston	1.99
+Houston	11.99
+NY	5.60
+NY	4.77
+Tokyo	34.8
+Paris	54.9
+Paris	4.9

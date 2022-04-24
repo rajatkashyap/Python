@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- #BeginTemplate "../../rapidtables.dwt" -->
+
+<head>
+<meta charset="windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="/lib/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/lib/rapidt.css">
+<!--[if lt IE 9]>
+<script src="/lib/html5shiv/html5shiv.js"></script>
+<![endif]-->
+<!-- #BeginEditable "doctitle" -->
+<title>Miles to Kilometers (mi to km) conversion calculator</title>
+<meta name="description" content="Miles (mi) to kilometers conversion calculator and how to convert.">
+<style>
+        .calc2 td textarea { font-size:large; width:100%; }
+        .calc2 td input[type=number], .calc2 td input[type=text] { width:100%; padding:5px; }
+        .ntable td:nth-child(1), .ntable td:nth-child(2) { width:100px }
+        #tbl3 { border:0; line-height:1 }
+        #tbl3 tr td { padding-left:0; }
+        #tbl3 td:nth-child(n+1) { float:none; }
+        #tbl3 tr td:nth-child(2) { padding-top:5px; }
+        #tbl3 tr td:nth-child(3) { padding-top:0px; }
+        @media all and (max-width: 576px) {
+                .calc2 tr td:nth-child(2) {
+                        width: 240px;
+                        width: calc(100% - 30px);
+                }
+                .calc2 tr:nth-child(4) td:nth-child(3) { padding-top:15px; }
+        }
+        @media all and (min-width: 577px) {
+                #tbl3 input[type=text] { width:140px; }
+        }
+</style>
+<!-- #EndEditable -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2665076-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<header id="header">
+        <div id="logo" class="box">
+                <p><a href="/"><img src="/lib/headline.jpg" width="161" height="42" alt="Home"></a></p>
+                <p>&nbsp;Online Reference&nbsp;&amp;&nbsp;Tools</p>
+        </div>
+        <div id="top-ad" class="box">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- RT above responsive -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-5335356106950684"
+                     data-ad-slot="6506963100"
+                     data-ad-format="auto"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+        </div>
+</header>
+
+<nav id="nav">
+        <!-- #BeginEditable "doclink" -->
+        <a href="/">Home</a>&rsaquo;<a href="/convert/index.htm">Conversion</a>&rsaquo;<a href="/convert/length/index.ht
+m">Length conversion</a>&rsaquo; Miles to km
+        <!-- #EndEditable -->
+</nav>
+
+<article id="lcol">
+
+        <!-- AddThis Button BEGIN -->
+        <div class="addthis_sharing_toolbox"></div>
+        <!-- AddThis Button END -->
+
+        <section id="doc">
+        <!-- #BeginEditable "doctext" -->
+        <h1>Miles to Kilometers conversion</h1>
+        <p>Miles (mi) to kilometers (km) conversion calculator and how to convert.</p>
+        <ul>
+                <li><a href="#calculator">Miles to kilometers conversion calculator</a></li>
+                <li><a href="#how">How to convert miles to kilometers</a></li>
+                <li><a href="#table">Miles to kilometers conversion table</a></li>
+        </ul>
+        <h2><a id="calculator"></a>Miles to kilometers conversion calculator</h2>
+        <p>Enter the length in miles (mi) and press the <i>Convert</i> button:</p>
+
+        <form name="calcform">
+        <table class="calc2">
+          <tr>
+                <td><label for="x">Enter miles:</label></td>
+                <td class="math"><input type="number" id="x" name="x" class="intext" autofocus tabindex="1"></td>
+            <td class="mathsymbol">mi</td>
+          </tr>
+          <tr>
+                <td>&nbsp;</td>
+                <td>
+                        <button type="button" id="calc" title="Convert" class="btn" tabindex="2" onclick="calc0()"><img
+src="/lib/icons/glyphicons_all/glyphicons_halflings/glyphicons_halflings_030_refresh.png" alt=""> Convert</button>
+                        <button type="reset" id="reset" title="Reset" class="btn" tabindex="3"><img src="/lib/icons/glyp
+hicons_all/glyphicons_halflings/glyphicons_halflings_013_remove.png" alt=""> Reset</button>
+                </td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+                <td>Kilometers result:</td>
+                <td class="math"><input type="text" name="y" class="outtext" readonly tabindex="4"></td>
+            <td class="mathsymbol">km</td>
+          </tr>
+          <tr>
+                <td>Kilometers+meters result:</td>
+                <td>
+                        <table id="tbl3">
+                                <tr>
+                                        <td class="math"><input type="text" id="y2" class="outtext" readonly tabindex="5
+"></td>
+                                <td class="mathsymbol">km</td>
+                                        <td class="math"><input type="text" id="y3" class="outtext" readonly tabindex="6
+"></td>
+                                </tr>
+                        </table>
+                </td>
+            <td class="mathsymbol">m</td>
+          </tr>
+          <tr id="pf1">
+                <td>Calculation:</td>
+                <td><textarea name="TA" rows="3" class="outtext" readonly></textarea></td>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+        </form>
+
+        <p><a href="km-to-mile.htm">km to miles &#9658;</a></p>
+        <h2><a id="how"></a>How to convert miles to kilometers</h2>
+        <p>1 mile is equal to 1.609344 kilometers:</p>
+        <p class="math">1 mi = 1.609344 km</p>
+        <p>The distance <em>d</em> in kilometers (km) is equal to the distance <i>d</i> in miles (mi) times 1.609344:</p
+>
+        <p class="math"><em>d</em><sub>(km)</sub> = <em>d</em><sub>(mi)</sub> &times; 1.609344 </p>
+        <h4>Example</h4>
+        <p>Convert 20 miles to kilometers:</p>
+        <p class="math"><em>d</em><sub>(km)</sub> = 20mi &times; 1.609344 = 32.18688km</p>
+        <h2><a id="table"></a>Miles to kilometers conversion table</h2>
+        <table class="ntable">
+        <thead>
+                <tr>
+                        <th>Miles (mi)</th>
+                        <th>Kilometers (km)</th>
+                </tr>
+        </thead>
+        <tbody>
+                <tr>
+                        <td>0.01 mi</td>
+                        <td>0.016093 km</td>
+                </tr>
+                <tr>
+                        <td>0.1 mi</td>
+                        <td>0.16093 km</td>
+                </tr>
+                <tr>
+                        <td>1 mi</td>
+                        <td>1.6093 km</td>
+                </tr>
+                <tr>
+                        <td>2 mi</td>
+                        <td>3.2187 km</td>
+                </tr>
+                <tr>
+                        <td>3 mi</td>
+                        <td>4.8280 km</td>
+                </tr>
+                <tr>
+                        <td>4 mi</td>
+                        <td>6.4374 km</td>
+                </tr>
+                <tr>
+                        <td>5 mi</td>
+                        <td>8.0467 km</td>
+                </tr>
+                <tr>
+                        <td>6 mi</td>
+                        <td>9.6561 km</td>
+                </tr>
+                <tr>
+                        <td>7 mi</td>
+                        <td>11.2654 km</td>
+                </tr>
+                <tr>
+                        <td>8 mi</td>
+                        <td>12.8748 km</td>
+                </tr>
+                <tr>
+                        <td>9 mi</td>
+                        <td>14.4841 km</td>
+                </tr>
+                <tr>
+                        <td>10 mi</td>
+                        <td>16.0934 km</td>
+                </tr>
+                <tr>
+                        <td>20 mi</td>
+                        <td>32.1869 km</td>
+                </tr>
+                <tr>
+                        <td>30 mi</td>
+                        <td>48.2803 km</td>
+                </tr>
+                <tr>
+                        <td>40 mi</td>
+                        <td>64.3738 km</td>
+                </tr>
+                <tr>
+                        <td>50 mi</td>
+                        <td>80.4672 km</td>
+                </tr>
+                <tr>
+                        <td>60 mi</td>
+                        <td>96.5606 km</td>
+                </tr>
+                <tr>
+                        <td>70 mi</td>
+                        <td>112.6541 km</td>
+                </tr>
+                <tr>
+                        <td>80 mi</td>
+                        <td>128.7475 km</td>
+                </tr>
+                <tr>
+                        <td>90 mi</td>
+                        <td>144.8410 km</td>
+                </tr>
+                <tr>
+                        <td>100 mi</td>
+                        <td>160.9344 km</td>
+                </tr>
+        </tbody>
+        </table>
+        <p>&nbsp;</p>
+        <p><a href="km-to-mile.htm">km to miles &#9658;</a></p>
+        <p>&nbsp;</p>
+        <hr>
+        <h2>See also</h2>
+        <ul>
+                <li><a href="km-to-mile.htm">km to miles conversion</a></li>
+                <li><a href="meter-to-inch.htm">Meters to inches conversion</a></li>
+                <li><a href="inch-to-cm.htm">Inches to cm conversion</a></li>
+                <li><a href="inch-to-feet.htm">Inches to feet conversion</a></li>
+                <li><a href="inch-to-mm.htm">Inches to mm conversion</a></li>
+        </ul>
+        <!-- #EndEditable -->
+        </section>
+
+        <div id="ban-ad">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- RT below midrec -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:300px;height:250px"
+                     data-ad-client="ca-pub-5335356106950684"
+                     data-ad-slot="1026815108"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+        </div>
+
+        <section id="feedback">
+                <h3><a name="feedback"></a>Write how to improve this page</h3>
+                <form name="feedback" method="post" action="/lib/sendform.php">
+                <table>
+                        <tr style="display:none"><td><input type="text" name="URL" readonly="readonly"></td></tr>
+                        <tr><td><input type="text" name="Name" tabindex="50" placeholder="Your Name"></td></tr>
+                        <tr><td><input type="text" name="Email" tabindex="51" placeholder="your@email.com"></td></tr>
+                        <tr><td><textarea name="Message" cols="50" rows="5" tabindex="52"></textarea></td></tr>
+                        <tr><td><input type="button" value="Submit Feedback" name="Action" class="btn" tabindex="53" onc
+lick="OnSubFb()"></td></tr>
+                </table>
+                </form>
+        </section>
+</article>
+
+<aside id="rcol">
+        <div class="gcse-searchbox">
+                <script>
+                  (function() {
+                    var cx = '005780289899100091646:pgzw8x741mk';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//www.google.com/cse/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                  })();
+                </script>
+                <gcse:searchbox-only></gcse:searchbox-only>
+        </div>
+        <div id="rec-ad">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- RT aside midrec -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:300px;height:250px"
+                     data-ad-client="ca-pub-5335356106950684"
+                     data-ad-slot="4559293256"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+        </div>
+
+        <!-- #BeginEditable "docnav" -->
+        <h5>LENGTH CONVERSION</h5>
+        <ul>
+                <li><a href="cm-to-feet.htm">cm to feet</a></li>
+                <li><a href="cm-to-inch.htm">cm to inches</a></li>
+                <li><a href="cm-to-mm.htm">cm to mm</a></li>
+                <li><a href="feet-to-cm.htm">Feet to cm</a></li>
+                <li><a href="feet-to-mm.htm">Feet to mm</a></li>
+                <li><a href="feet-to-inch.htm">Feet to inches</a></li>
+                <li><a href="feet-to-meter.htm">Feet to meters</a></li>
+                <li><a href="height-converter.htm">Height converter</a></li>
+                <li><a href="inch-to-cm.htm">Inches to cm</a></li>
+                <li><a href="inch-to-feet.htm">Inches to feet</a></li>
+                <li><a href="inch-to-meter.htm">Inches to meters</a></li>
+                <li><a href="inch-to-mm.htm">Inches to mm</a></li>
+                <li><a href="km-to-mile.htm">km to miles</a></li>
+                <li><a href="meter-to-feet.htm">Meters to feet</a></li>
+                <li><a href="meter-to-inch.htm">Meters to inches</a></li>
+                <li><a href="mile-to-km.htm">Miles to km</a></li>
+                <li><a href="mm-to-cm.htm">mm to cm</a></li>
+                <li><a href="mm-to-feet.htm">mm to feet</a></li>
+                <li><a href="mm-to-inch.htm">mm to inches</a></li>
+        </ul>
+        <h5>RAPID TABLES</h5>
+        <ul>
+                <li><a href="mailto:?subject=RapidTables%20website&amp;body=Please%20checkout%20this%20site:%20http://ww
+w.rapidtables.com">Recommend Site</a></li>
+                <li><a href="#feedback">Send Feedback</a></li>
+                <li><a href="/about/about.htm">About</a></li>
+        </ul>
+        <script type="text/javascript" src="../convert.js"></script>
+        <script type="text/javascript">
+                <!--
+                function calc0() {
+                        var x = document.calcform.x.value;
+                        var y = (parseFloat(x)*1.609344);
+                        var y = roundresult(y);
+                        var y2 = Math.floor(y);
+                        var y3 = roundresult((y-y2)*1000);
+                        var txt=x+"mi \u00D7 1.609344\n";
+                        txt+="= "+y+'km';
+                        document.calcform.y.value = y;
+                        document.calcform.y2.value = y2;
+                        document.calcform.y3.value = y3;
+                        document.calcform.TA.value = txt;
+                }
+                //-->
+        </script>
+        <!-- #EndEditable -->
+</aside>
+
+<footer id="footer">
+        <a href="/index.htm">Home</a> |
+        <a href="/web/index.htm">Web</a> |
+        <a href="/math/index.htm">Math</a> |
+        <a href="/electric/index.htm">Electricity</a> |
+        <a href="/calc/index.htm">Calculators</a> |
+        <a href="/convert/index.htm">Converters</a>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script>
+        <a href="/">RapidTables.com</a> |
+        <a href="/about/about.htm" rel="nofollow">About</a> |
+        <a href="/about/terms.htm" rel="nofollow">Terms of Use</a> |
+        <a href="/about/privacy.htm" rel="nofollow">Privacy Policy</a>
+        </p>
+</footer>
+
+</div>
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-539822462192dcdf" async="async"><
+/script>
+<script src="/lib/feedback.js" defer></script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

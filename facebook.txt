@@ -1,0 +1,77 @@
+4 segment - 1 hr each
+3 similar
+1 lunch interview - facebook cafe. why facebook, expereicen, why data eginerring
+3 interview
+- designed a
+- 6 skill - each interview cover 6 skill - business or prod, data viz, sql , data modelling, ETL and coding
+business  - think abot
+
+sql - sub selects, functions, 
+data modelling- design with large volume
+etl - data quality, etl 
+coding  - Python 
+
+ all on white board 
+
+business or product sense - not just data strcutures but also products - 
+
+most import  - use metrics of investor relatioms 
+can be any company any business
+Uber/United/Amazon/
+
+Data viz - browsing thriugh data viz gallaries
+dashboards examples
+search youtube
+
+look into data viz tech in following:
+goal/actual
+trending
+geographic datasets
+share of wallet/maket type of dataset
+forecast attainment
+product mix
+
+try to create viz chart for investing 
+
+dashboad - if you have white board to practice.. trying using that or piece of paper
+
+
+
+Data modelling/ EtL and sql - how you would capture most imp data elements - how you capture, see how your 
+
+design summary tables from logs 
+imtermediate tables 
+what dimensions you might what include to look at the mertics
+design sql - log to intermediate table 
+SQL - all joins, sub queries, set operations, agg and grouping, anaylytics func such as windowing
+
+coding - data engineer- processing data usijng ETL, data sctructures, manipulate, control flow, 
+
+python to get the dashboard data - capture the logs, 
+
+
+general 
+- white board
+- comminucate with the interviewer
+- ask ques
+- interviewer are on laptops
+- dont rush into things
+- keep calm
+- be comfortable 
+- dont ask how you are doing on time
+- communicate properly
+
+most common 
+- algo? we expect yiu to know data algorithm - cost of different algorithms - big 0 notation - focus on data structure - CODING
+- ER or Dimensional model? - both...  what is the best way to model
+- python which version - doesnt matter
+- data model- traditional models - basic undertsanding of other models
+- any specific structure - arrays, list, hash-map, stack or may be cube
+- My SQL -  
+- coding - no packages, implement 
+- direct - merge sort, linked list - we cannot gurantee such 
+- basic understanding 
+
+ 
+
+- 

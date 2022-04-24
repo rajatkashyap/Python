@@ -1,0 +1,2295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <title>Power To Choose | Plans</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=9">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <meta name="description" content="Power to Choose is the official, unbiased, electric choice website of the Publ
+ic Utility Commission of Texas, where all certified electric providers in the State of Texas are eligible to post their
+electric plans. On the Power to Choose website you can compare electric offers and choose the plan that&#39;s right for
+you."/>
+        <meta name="keywords" content="Texas, Texas Electric Choice, Retail Electric Provider, electric company, power t
+o choose, shop for electricity, shop for energy, energy shopping, electricity shopping, compare electric plans, electric
+ rates, compare electric rates" />
+
+        <META HTTP-EQUIV="Pragma"        CONTENT="no-cache">
+        <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+
+
+
+
+
+        <link type="image/x-icon" href="/Content/images/favicon.ico" rel="icon" />
+        <link rel="shortcut icon" href="/Content/images/favicon.ico" />
+
+        <link rel="stylesheet" media="all" href="/Content/css/demo.css">
+        <link rel="stylesheet" media="all" href="/Content/css/all.css">
+        <link rel="stylesheet" media="print" href="/Content/css/print.css">
+        <link rel="stylesheet" media="all" href="/Content/css/kendo.common.min.css">
+        <link rel="stylesheet" media="all" href="/Content/css/kendo.default.min.css">
+        <link rel="stylesheet" type="text/css" href="/Content/css/bootstrap.min.css" />
+
+        <link rel="stylesheet" type="text/css" href="/Content/css/PUC.css" />
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="/Content/js/linq.js"></script>
+        <script src="/Content/js/kendo.web.min.js"></script>
+        <script src="/Content/js/simplea.js"></script>
+        <script src="/Content/js/jquery.stepy.min.js"></script>
+        <script src="/Content/js/main.js"></script>
+        <script type="text/javascript" src="/Content/js/bootstrap.min.js"></script>
+
+        <!--[if IE]><script src="/Content/js/ie.js"></script><![endif]-->
+        <!--[if gte IE 9]><link rel="stylesheet" media="all" href="/Content/css/ie9.css"><![endif]-->
+
+        <script src="/Scripts/knockout-2.2.1.js"></script>
+        <!-- <script src="/Scripts/client/client.min.js"></script> -->
+
+
+
+
+
+        <script type="text/javascript">
+                        var lang = 'en-us';
+                        var lang_param = '0';
+                        var ResourcesGridLabel_Language = '0';
+                        var ResourcesPlansLabel_SelectAValue = 'Select a TDU';
+        </script>
+
+<!-- Google Anaytics -->
+<script type="text/javascript">
+
+        var googleKey = 'UA-21943797-2';
+
+        if (lang_param == 1) {
+                googleKey = 'UA-21943797-3';
+        }
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', googleKey]); //-- now uses variable rather than hard-coded into array
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.co
+m/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+</script>
+
+<!-- End Google Anaytics -->
+
+
+</head>
+<body>
+        <!-- page -->
+        <div id="page">
+                <!-- header -->
+                <header id="header">
+                        <div class="wrapper">
+                                <strong class="logo" style="background:url('/Content/images/logo-site.png') no-repeat to
+p center;"><a href="/en-us">Power To Choose</a></strong>
+                                <div class="social">
+                                        <a href="/en-us/Plan/Results"></a>
+                                        <a href="/es-es/Plan/Results"><img src="/Content/images/spanish.png" alt="Espa├▒
+ol" /></a>
+                                        <a href="https://twitter.com/PUCTX" target="_blank" class="twitter">
+                                                <img src="/Content/images/twitter.png" alt="Twitter" />
+                                        </a>
+                                        <a href="https://www.facebook.com/PowertoSaveTexas/" target="_blank" class="face
+book">
+                                                <img src="/Content/images/facebook.png" alt="Facebook" />
+                                        </a>
+
+                                </div>
+                                <nav class="menu f-sackers-heavy">
+                                        <ul>
+                                                <li><a href="/en-us/">Home</a></li>
+                        <li><a href="/en-us/Content/Resource/Selling-Renewable-Power">Renewable Power</a></li>
+                                                <li><a href="/en-us/Content/Resource/About-Shopping">About Shopping</a><
+/li>
+                                        </ul>
+                                </nav>
+                        </div>
+                </header>
+
+    <!-- intro Body -->
+
+
+
+<script type="text/javascript">
+
+    var ResourcesGridLabel_FactSheetToolTip = $("<div/>").html('External link to company Fact Sheet').text();
+    var ResourcesGridLabel_FactSheet = $("<div/>").html('Fact Sheet').text();
+
+    var ResourcesGridLabel_TermsOfServiceToolTip = $("<div/>").html('External link to company Terms Of Services').text()
+;
+    var ResourcesGridLabel_TermsOfService = $("<div/>").html('Terms of Service').text();
+
+    var ResourcesGridLabel_PrepaidUrlToolTip = $("<div/>").html('External link to company Prepaid Url').text();
+    var ResourcesGridLabel_PrepaidUrl = $("<div/>").html('Prepaid Disclosure').text();
+
+    var ResourcesMobileHeaderGoToPlanToolTip = 'External link to sign up for plan';
+    var ResourcesMobileHeaderSpecialTermsToolTip = 'Special Terms';
+    var ResourcesEnrollPhoneToolTip = 'Company Phone Number to enroll in plan';
+
+
+    var ResourcesWebsiteUrlToolTip = $("<div/>").html('External link to company website').text();
+
+    var ResourcesComplaintScoreCard = $("<div/>").html('Company Rating').text();
+    var ResourcesComplaintScoreInfo = $("<div/>").html('The Company Rating is based on the ratio of customer complaints
+a company has received in the past 6 months compared to other companies. The more stars a company has, the lower the com
+plaint ratio.&lt;br&gt;&lt;br&gt;5 stars = Lowest Complaint Ratio&lt;br&gt;&lt;br&gt;4 stars = Lower than Average&lt;br&
+gt;&lt;br&gt;3 stars = Average&lt;br&gt;&lt;br&gt;2 stars = Higher than Average&lt;br&gt;&lt;br&gt;1 star = Highest Comp
+laint Ratio').text();
+    //var ResourcesComplaintScoreInfo = 'The Company Rating is based on the ratio of customer complaints a company has r
+eceived in the past 6 months compared to other companies. The more stars a company has, the lower the complaint ratio.&l
+t;br&gt;&lt;br&gt;5 stars = Lowest Complaint Ratio&lt;br&gt;&lt;br&gt;4 stars = Lower than Average&lt;br&gt;&lt;br&gt;3
+stars = Average&lt;br&gt;&lt;br&gt;2 stars = Higher than Average&lt;br&gt;&lt;br&gt;1 star = Highest Complaint Ratio';
+    //alert(ResourcesComplaintScoreInfo);
+
+    var ResourcesComplaintScoreCardToolTip = $("<div/>").html('Scorecard').text();
+
+    var ResourcesComplaintHistory = $("<div/>").html('History').text();
+    var ResourcesComplaintHistoryInfo = $("<div/>").html('The Complaint History is the number of complaints received per
+ category for the last six months.').text();
+    var ResourcesComplaintHistoryToolTip = $("<div/>").html('New Window to company Complaint History').text();
+
+    var ResourcesUsageFeeCreditInfo = $("<div/>").html('Many electric companies require that you use a minimum amount of
+ electricity each month. Our shopping tool allows you to see if a company requires a minimum electricity usage and if th
+ere is an associated fee or credit. Note: These fees or credits are already included in the average kWh prices and are n
+ot in addition to or taken off the top of the amounts posted.').text();
+    var ResourcesGridLabel_UsageFeeCreditLabel = $("<div/>").html('Minimum Usage Fees / Credits').text();
+    var ResourcesGridLabel_UsageFeeCreditLabelTip = $("<div/>").html('Minimum Usage Fees / Credits').text();
+
+    //ResourcesGridLabel_UsageFeeCreditLabel = ResourcesGridLabel_UsageFeeCreditLabel.replace("&#233;", "├⌐");
+    //var ResourcesGridLabel_UsageFeeCreditLabelTip = ResourcesGridLabel_UsageFeeCreditLabel.replace("&lt;br&gt;", " ");
+
+    //ResourcesGridLabel_UsageFeeCreditLabel = ResourcesGridLabel_UsageFeeCreditLabel.replace("&lt;br&gt;", "     ");
+
+
+    var ResourcesGridLabel_Compare = 'Compare';
+    var ResourcesGridLabel_Company = 'Company';
+    var ResourcesGridLabel_PlanDetails = 'Plan Details';
+    var ResourcesGridLabel_Price = 'Price/kWh';
+    var ResourcesGridLabel_PricingDetails = 'Pricing Details';
+    var ResourcesGridLabel_OrderingInfo = 'Ordering Info';
+    var ResourcesGridLabel_Of = 'of';
+    var ResourcesGridLabel_Compare = 'Compare';
+    var ResourcesGridLabel_Loading = 'Loading...';
+
+
+    //var ResourcesGridLabel_FactSheet = ResourcesGridLabel_FactSheet.replace("&#233;", "├⌐");
+    //var ResourcesGridLabel_TermsOfService = ResourcesGridLabel_TermsOfService.replace("&#233;", "├⌐");
+    //var ResourcesGridLabel_PrepaidUrl = ResourcesGridLabel_PrepaidUrl.replace("&#233;", "├⌐");
+
+    var ResourcesGridLabel_NoPlansFound = 'No Plans Found';
+    var ResourcesPlansLabel_EnergyCompaniesAll = 'All';
+    var ResourcesMobileHeaderMonth = 'Month';
+    var ResourcesMobileHeaderMonths = 'Months';
+    var ResourcesPlansLabel_Rate = 'Rate';
+    var ResourcesGridLabel_Language = '0';
+    var ResourcesMobileHeaderGoToPlan = 'Sign Up';
+    var ResourcesMobileHeaderSpecialTerms = 'Special Terms';
+    var ResourcesMobileHeaderPromotion = 'Promotions';
+
+    var ResourceRateTypeFixed = 'Fixed Rate';
+    var ResourceRateTypeVariable = 'Variable (Changing Rate)';
+    var ResourceRateTypeIndexed = $("<div/>").html('Indexed (Market Rate)').text();
+    //var ResourceRateTypeIndexed = 'Resources.Global.GuideLabel_StepTwoLeftQuestionValue3';
+
+    var ResourceMinUsageDisclaimer_Dialog = '<p> Results are shown excluding plans that are variable or indexed as well
+as plans that have minimum usage fees or credits.</p><p>You can change these options through the tools at the left side
+and top of the page.</p>';
+    var ResourceMinUsageDisclaimer_Dialog_Title = 'Notice';
+
+
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var company_tdu_id = '';
+        var estimatedUse = '';
+        var planType = '';
+        var contractLength = '';
+
+        var planMoFrom = '';
+        var planMoTo = '';
+
+        /* JEC */
+
+        var minUsage = 'off';
+        var showDisclaimer = '';
+
+        if (estimatedUse.length > 0)
+            $('#estimated_use').val(estimatedUse);
+        else
+            $("#estimated_use").val('1000').attr("selected", "selected");
+
+        if (minUsage.length > 0) {
+            $('#min_usage_plan').val(minUsage);
+        } else {
+            $('#min_usage_plan').val('off');
+        }
+
+        if (estimatedUse) {
+            if (planType.length) {
+                var plans = planType.split(",");
+                for (i = 0; i < plans.length; i++) {
+                    if (plans[i] == 1)
+                        $('#cb1').prop('checked', true);
+                    else if (plans[i] == 0)
+                        $('#cb2').prop('checked', true);
+                    else if (plans[i] == 2)
+                        $('#cb3').prop('checked', true);
+                }
+            }
+            $('#plan_mo_from').val(planMoFrom);
+            $('#plan_mo_to').val(planMoTo);
+
+            //if (contractLength.length) {
+            //    var contracts = contractLength.split(",");
+            //    for (i = 0; i < contracts.length; i++) {
+            //        if (contracts[i] == 1)
+            //            $('#cl4').prop('checked', true);
+            //        else if (contracts[i] == 6)
+            //            $('#cl3').prop('checked', true);
+            //        else if (contracts[i] == 12)
+            //            $('#cl2').prop('checked', true);
+            //        else if (contracts[i] == 24)
+            //            $('#cl1').prop('checked', true);
+            //        }
+            //}
+        } else {
+            $('#cb1').prop('checked', true);
+            //$('#cb2').prop('checked', true);
+            //$('#cb3').prop('checked', true);
+            //$('#cl4').prop('checked', true);
+
+            //$('#cl3').prop('checked', true);
+            //$('#cl2').prop('checked', true);
+            //$('#cl1').prop('checked', true);
+            //$('#contract_length').val('1,6,12,24');
+
+            //$('#contract_length').val('6,12');
+            $('#plan_type').val('0,1,2');
+            $('#plan_mo_from').val(''); // 3
+            $('#plan_mo_to').val(''); // 24
+        }
+
+        $('.zipcode-input-results').keydown(function (event) {
+            if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 || event.keyCode
+== 13 ||
+                 (event.keyCode >= 35 && event.keyCode <= 40)) {
+                return;
+            } else {
+                if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105) || event.s
+hiftKey) {
+                    event.preventDefault();
+                }
+            }
+        });
+
+        $('#estimated_use').change(function () {
+            //ajaxCallBackGridPrice();
+        });
+
+        $('#companies').change(function () {
+            $("#company_id").val($(this).val());
+            //ajaxCallBackGridPrice();
+        });
+
+        $('#company_tdu').change(function () {
+            $("#company_tdu_id").val($(this).val());
+            //ajaxCallBackGridPrice();
+        });
+
+        var ua = navigator.userAgent,
+        new_event = (ua.match(/iPad/i)) ? "touchend" : "click";
+
+        $('.pages').on(new_event, 'a', function () {
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
+        });
+
+        // Expand details on Mobile
+        $('.arrow').live(new_event, function () {
+            showHiddenElements(this);
+        });
+
+        //$('#el_go_to_plans').live(new_event, function () {
+        //    externallink(this);
+        //});
+
+        //$('#el_fact_sheet').live(new_event, function () {
+        //    externallink(this);
+        //});
+
+        //$('#el_terms_of_services').live(new_event, function () {
+        //    externallink(this);
+        //});
+
+        //$('#el_fact_sheet_icon').live(new_event, function () {
+        //    externallink(this);
+        //});
+
+        //$('#el_terms_of_services_icon').live(new_event, function () {
+        //    externallink(this);
+        //});
+
+        $(".chkcompare").live(new_event, function () {
+            //alert('chkcompare');
+            var compare = [];
+            // enabled checked for mobile
+            if (new_event === "touchend") {
+                console.log('mobile' + $(this).is(':checked'));
+                if ($(this).is(':checked')) {
+                    $(this).removeAttr('checked');
+                } else {
+                    $(this).attr('checked', 'checked');
+                }
+            }
+
+            $('#dataTable input:checked').each(function (key, value) {
+                compare.push(value);
+            });
+
+            if (compare.length > 0) {
+                $("#compare").removeClass("btn");
+                $("#compare").addClass("button-plans");
+            } else {
+                $("#compare").removeClass("button-plans");
+                $("#compare").addClass("btn");
+                //-- clear compare filter if no checks are left
+                var grid = $("#dataTable").data("kendoGrid");
+                grid.dataSource.filter([]);
+            }
+        });
+
+        $("#dataTable input").live(new_event, function () {
+            $(this).closest(".row.active").find('.compare-mini-link').toggleClass('hide');
+            var compared = $('#compared_planes').val();
+            var value = $(this).val();
+            var n = compared.indexOf(value);
+            if ($(this).attr('checked')) {
+                if (n == -1) {
+                    var old = $('#compared_planes').val();
+                    var plan = old + $(this).val() + ',';
+                    $('#compared_planes').val(plan);
+                }
+            } else {
+                compared = compared.replace(value + ',', '');
+                $('#compared_planes').val(compared);
+            }
+        });
+
+        $(".promotions-link a").live(new_event, function (e) {
+
+            $('#promotionsbox #specialtermsbox').html($(this).data("terms"));
+            $('#promotionsbox #promotionbox').html($(this).data("promo"));
+            var planname = $(this).data("name");
+            var ren = $(this).data("renewable");
+            var ratetypevalue = $(this).data("rate");
+            var ratetypelabel = "";
+            var ratetypefinal = "";
+            if (ratetypevalue != "" && ratetypevalue != null) {
+                ratetypefinal = ratetypevalue + "<br>";
+                if (ratetypevalue == 'Fija' && ResourcesGridLabel_Language == 1){
+                    ratetypelabel = ResourcesPlansLabel_Rate;
+                    ratetypefinal = ratetypelabel + " " + ratetypevalue + "<br>";
+                }
+                if (ratetypevalue == 'Fixed' && ResourcesGridLabel_Language == 0 ){
+                    ratetypelabel = ResourcesPlansLabel_Rate;
+                    ratetypefinal = ratetypevalue + " " + ratetypelabel + "<br>";
+                }
+            }
+            var termvalue = $(this).data("termval");
+            if (termvalue != "0" ){
+                if (termvalue == "1" ){
+                    termvalue = termvalue + " " + ResourcesMobileHeaderMonth + "<br>";
+                } else {
+                    termvalue = termvalue + "  " + ResourcesMobileHeaderMonths + "<br>";
+                }
+            }
+
+            if (typeof ren === "undefined" || ren == '' || ren == null || termvalue == "undefined") {
+                ren = "";
+            }
+
+            if (typeof termvalue === "undefined" || termvalue == '' || termvalue == null || termvalue == "undefined") {
+                termvalue = "";
+            }
+
+            if (typeof ratetypefinal === "undefined" || ratetypefinal == '' || ratetypefinal == null || ratetypefinal ==
+ "undefined") {
+                ratetypefinal = "";
+            }
+
+            //$('#promotionsbox #plandetailsbox').html(planname + "<br>" + ratetypefinal + termvalue + ren);
+            $('.overlay').show();
+            $('#promotionsbox').show();
+        });
+
+        $(".usagedetails-link a.dataLink").live(new_event, function (e) {
+
+            var detailTitle = "<b>" + ResourcesGridLabel_UsageFeeCreditLabel + "</b><br />";
+            var detail500 = $(this).data("kwh500");
+            var detail1000 = $(this).data("kwh1000");
+            var detail2000 = $(this).data("kwh2000");
+
+            if (detail500 != "" && detail500 != null) {
+                detail500 = "" + detail500;
+            } else {
+                detail500 = "";
+            }
+
+            if (detail1000 != "" && detail1000 != null) {
+                detail1000 = "" + detail1000;
+            } else {
+                detail1000 = "";
+            }
+
+            if (detail2000 != "" && detail2000 != null) {
+                detail2000 = "" + detail2000;
+            } else {
+                detail2000 = "";
+            }
+
+            $('#usagedetailsbox #usagebox').html(detailTitle + "<ul><li>" + detail500 + "</li><li>" + detail1000 + "</li
+><li>" + detail2000 + "</li></ul>");
+            $('.overlay').show();
+            $('#usagedetailsbox').show();
+            //$("#usagedetailsbox").offset({ left: e.pageX, top: e.pageY });
+        });
+
+
+        if (showDisclaimer) {
+            $('#minusgaeDisclaimerbox #usagebox').html(ResourceMinUsageDisclaimer_Dialog);
+            $('#minusgaeDisclaimerbox #usagebox_title').html(ResourceMinUsageDisclaimer_Dialog_Title);
+            $('.overlay').show();
+            $('#minusgaeDisclaimerbox').show();
+        }
+
+    });
+    var action_print = '/en-us/Plan/PrintResults';
+    $('#estimated_use').focus();
+</script>
+<div id="main">
+    <div id="promotionsbox" class="lightbox" style="display:none; position:fixed;">
+                        <a class="btn-close" href="#">Close</a>
+      <div id="specialtermsbox"></div>
+      <div id="promotionbox"></div>
+      <div id="plandetailsbox"></div>
+                </div>
+
+    <div id="usagedetailsbox" class="lightbox" style="display:none; position:fixed;">
+                        <a class="btn-close" href="#">Close</a>
+        <div id="usagebox"></div>
+                </div>
+
+
+    <div id="minusgaeDisclaimerbox" class="lightbox" style="display:none; position:fixed;">
+        <img style="position:absolute; top:15px; height:20px; width:17px; overflow:hidden;" src="/Content/css/images/exc
+lamation.png" alt="" aria-hidden="true" /><h1 id="usagebox_title" style="position:absolute; font-style: italic; font-siz
+e: 1.7em; color: #b34f2f; color: rgba(179, 79, 47, 1); top:15px; left:55px; width:200px; height:50px; overflow:hidden;">
+</h1><a class="btn-close" href="#">Close</a>
+        <div id="usagebox"></div>
+    </div>
+
+        <div class="wrapper">
+                        <form action="/en-us/Plan/ExportToCsv" method="post" id="exportCsvForm">
+                        </form>
+
+                        <form action="/en-us/Plan/ExportToExcel" method="post" id="resultsForm">
+                                <input type="hidden" name="method" id="method" value="plans" />
+        <input type="hidden" name="compared_planes" id="compared_planes" value="" />
+        <input type="hidden" name="company_type" id="company_type" value="0"/>
+        <header class="title-box">
+                                        <h1>Shop. Compare. Choose.</h1>
+        </header>
+        <!-- result-block -->
+                                <div class="result-block a-grid">
+        <!-- side-col -->
+                                        <aside class="side-col">
+
+                                                <header class="heading-box tc">
+                                                        <h2 class="f-sackers-medium">
+                                                                <span class="zipcode-edit" data-type="editable" data-for
+=".zipcode-input-results">77459</span><img src="/Content/images/ajax-loader.gif" alt="loading..." style="display: none;
+width: 16px; height: 16px;" id="loading-image-grid" />
+                                                                <input class='zipcode-input-results' maxlength="5" />
+                                                                <input type="hidden" value="77459" id="resultszipcode" n
+ame="zip_code">
+                                                        </h2>
+                                    </header>
+
+                                                <div class="subheadings">
+                                            <a class="btn f-sackers-heavy refresh-results" href="#">Refresh Results</a>
+                                    </div>
+
+                                    <!-- group-box -->
+                                    <div class="group-box">
+
+              <div class="group upper-dropdown" id="utility_companies" style="display:visible;">
+                                                                <a class="link-info tool-tip" href="javascript:" title="
+Formerly called a local electric utility or a Transmission and Distribution Utility, this company is responsible for del
+ivering electricity to your area, reading your meter, and maintaining the poles and wires.">Info</a>
+                                                                <h3>TDU Area</h3>
+                                                                <select tabindex="1" id="company_tdu" name="company_tdu"
+ class="f-sackers-heavy">
+                                                                        <option value="">All</option>
+                                                                </select>
+                                                                <input type="hidden" name="company_tdu_id" id="company_t
+du_id" value=""/>
+                                                        </div>
+
+                                                        <div class="group lower-dropdown">
+                                                                <a class="link-info tool-tip" href="javascript:" title="
+Your average estimated monthly electricity use. The amount of electricity you use each month can be found on your electr
+ic bill. To find your average for the last six months, add the total kWh used each month and divide that number by six.
+Or you can just use 1,000 kWh as your monthly average.">Info</a>
+                                                                <h3>Estimated Use</h3>
+                                                                <select id="estimated_use" name="estimated_use" class="f
+-sackers-heavy" tabindex="1">
+                                                                        <option value=500>500 &#8211; 1,000 kWh</option>
+
+                                                                        <option selected="" value=1000>1,001 &#8211; 2,0
+00 kWh</option>
+                                                                        <option value=2000>MORE THAN 2,000 kWh</option>
+                                                                        <option value=0>I DON&#8217;T KNOW</option>
+                                                                </select>
+                                                        </div>
+
+                                                        <div class="group">
+                                                                <a class="link-info tool-tip" href="javascript:" title="
+Price per kilowatt hour: A kilowatt hour is equal to 1 kilowatt (1kW) of power used for 1 hour (1h) of time.">Info</a>
+                                                                <h3>Price/kWh</h3>
+                                                                <div class="fields">
+                                                                        <input tabindex="2"  maxlength="5" title="price"
+ class="text" type="text" name="price_from" id="price_from"> ┬ó
+                                                                        <span class="to">to</span>
+                                                                        <input tabindex="3" maxlength="5" title="price"
+class="text" type="text" name="price_to" id="price_to"> ┬ó
+                                                                </div>
+                                                        </div>
+
+
+
+                                                        <div class="group">
+                                                                <a class="link-info tool-tip" href="javascript:" data-ht
+ml="true" title="If you choose a plan with a long contract period, you may be subject to an early cancellation fee if yo
+u decide to change plans prior to the expiration of the contract period.&lt;br&gt;&lt;br&gt;Plans that are shorter give
+you more flexibility to switch, but they only lock in your set rate for a short amount of time.&lt;br&gt;&lt;br&gt;Month
+-to-Month plans are usually Variable or Indexed offers.">Info</a>
+                                                                <h3>Contract Length</h3>
+                                                                <div class="fields">
+                                                                        <input tabindex="4"  maxlength="5" title="Plans
+From" class="text" type="text" name="plan_mo_from" id="plan_mo_from">
+                                                                        <span class="to">to</span>
+                                                                        <input tabindex="5" maxlength="5" title="Plans T
+o" class="text" type="text" name="plan_mo_to" id="plan_mo_to">
+                                                                        <span class="to">mo</span>
+                                                                </div>
+
+
+
+
+                                                        </div>
+
+                            <!-- JEC default restuls to no_min_usage-->
+                                            <div class="group">
+
+                                <a class="link-info tool-tip" href="javascript:" data-html="true" title="This filter all
+ows you to view plans that do not have any recurring fees or credits included in the average per kWh price.&lt;br&gt;&lt
+;br&gt; If you choose to view plans with fees/credits included in the average per kWh price, you need to be aware that t
+he average per kWh price may vary significantly from your actual billed price per kWh.&lt;br&gt;&lt;br&gt; Please review
+ the fact sheets for these plans carefully before enrolling in a product.">Info</a>
+                                                <h3>Pricing and Billing</h3>
+                                                <ul class="check-list">
+                                                    <li>
+                                                        <input tabindex="13" id="rm0" type="radio" name="cb_min_usage">
+                                                        <label for="pb0_all_plans">Show All Plans</label>
+                                                    </li>
+                                                    <li>
+                                        <input tabindex="15" id="rm2" type="radio" checked="checked" name="cb_min_usage"
+>
+                                                        <label for="pb2_no_min_usage">Plans Without Minimum Usage Fees/C
+redits</label>
+                                                    </li>
+
+                                                </ul>
+                                <input type="hidden" value="off" id="min_usage_plan" name="min_usage_plan">
+                                            </div>
+
+                                            <div class="group">
+                                                                <a class="link-info tool-tip" href="javascript:" data-ht
+ml="true" title="Fixed Rate Plans have a set rate per kWh that does not change throughout your contract, except for exce
+ptions beyond the provider&#8217;s control.&#13;&#10;&lt;br&gt;&lt;br&gt;&#13;&#10;Changing Rate (Variable) Plans have r
+ates per kWh that can vary according to a method determined solely by the provider and may be dependent on market change
+s and other exceptions beyond the provider&#8217;s control &#13;&#10;&lt;br&gt;&lt;br&gt;&#13;&#10;Market Rate (Indexed)
+ Plans have rates per kWh that can vary according to pre-defined publicly available indices or information and other exc
+eptions beyond the provider&#8217;s control.">Info</a>
+                                                                <h3>Plan Type</h3>
+                                                                <ul class="check-list">
+                                                                        <li>
+                                                                                <input tabindex="10" id="cb1" type="chec
+kbox" name="cb1" value="1">
+                                                                                <label for="cb1">Fixed Rate</label>
+                                                                        </li>
+                                                                        <li>
+                                                                                <input tabindex="11" id="cb2" type="chec
+kbox"  name="cb2" value="0">
+                                                                                <label for="cb2">Variable (Changing Rate
+)</label>
+                                                                        </li>
+                                                                        <li>
+                                                                                <input tabindex="12" id="cb3" type="chec
+kbox" name="cb3" value="2">
+                                                                                <label for="cb3">Indexed (Market Rate)</
+label>
+                                                                        </li>
+                                                                </ul>
+                                                                <input type="hidden" value="" id="plan_type" name="plan_
+type">
+                                                        </div>
+
+                                        <div class="group">
+                                                                <a class="link-info tool-tip" href="javascript:" title="
+Prepaid plans provide service on a &#8220;pay-as-you-go&#8221; basis. These plans require close monitoring or accurately
+ estimating your monthly electric use to avoid disconnection.">Info</a>
+                                                                <h3>Prepaid Plans</h3>
+                                                                <ul class="check-list">
+                                                                        <li>
+                                                                                <input tabindex="16" id="r0" type="radio
+" checked="checked" name="cb_prepaid_plan">
+                                                                                <label for="r0">Show All Plans</label>
+                                                                        </li>
+                                                                        <li>
+                                                                                <input tabindex="17" id="r1" type="radio
+"  name="cb_prepaid_plan">
+                                                                                <label for="r1">Show Only Prepaid Plans<
+/label>
+                                                                        </li>
+                                                                        <li>
+                                                                                <input tabindex="18" id="r2" type="radio
+" name="cb_prepaid_plan">
+                                                                                <label for="r2">Do Not Show Prepaid Plan
+s</label>
+                                                                        </li>
+                                                                </ul>
+                                                                <input type="hidden" value="" id="prepaid_plan"  name="p
+repaid_plan">
+                                                        </div>
+
+                                                        <div class="group">
+                                                                <a class="link-info tool-tip" href="javascript:" title="
+Time-of-Use plans include incentives to use power during certain periods such as nights or weekends.  The average prices
+ shown for Time-of-Use Plans are based on the REP&#8217;s estimate of energy used during discounted and non-discounted t
+imes.  Please note that the average price you pay will vary depending on your actual usage of energy during the discount
+ed and non-discounted times.  See the glossary for details.">Info</a>
+                                                                <h3>Time Of Use Plans</h3>
+                                                                <ul class="check-list">
+                                                                        <li>
+                                                                                <input tabindex="19" id="rt0" type="radi
+o" checked="checked" name="cb_timeofuse">
+                                                                                <label for="rt0">Show All Plans</label>
+                                                                        </li>
+                                                                        <li>
+                                                                                <input tabindex="20" id="rt1" type="radi
+o"  name="cb_timeofuse">
+                                                                                <label for="rt1">Show Only Time Of Use P
+lans</label>
+                                                                        </li>
+                                                                        <li>
+                                                                                <input tabindex="21" id="rt2" type="radi
+o" name="cb_timeofuse">
+                                                                                <label for="rt2">Do Not Show Time of Use
+ Plans</label>
+                                                                        </li>
+                                                                </ul>
+                                                                <input type="hidden" value="" id="timeofuse"  name="time
+ofuse">
+                                                        </div>
+
+                                                        <div class="group">
+                                                                <a class="link-info tool-tip" href="javascript:" title="
+The Company Rating is a measure of consumer complaints per 1,000 customers based on a 6-month rolling average. The PUC i
+s legally prohibited from releasing the number of customers that each REP serves.">Info</a>
+                                                                <h3>Company Rating</h3>
+                                                                <ul class="check-list">
+                                                                        <li>
+                                                                                <input tabindex="22" id="rating5" type="
+checkbox" name="cb_rating_total_5">
+
+                                        <img src="/Content/images/StarRating5.png" title="" style="margin-top: 4px; widt
+h: 110px; height: 17px;" />
+                                                                        </li>
+                                                                        <li>
+                                                                                <input tabindex="23" id="rating4" type="
+checkbox" name="cb_rating_total_4">
+
+                                        <img src="/Content/images/StarRating4.png" title="" style="margin-top: 4px; widt
+h: 110px; height: 17px;" />
+                                                                        </li>
+                                                                        <li>
+                                                                                <input tabindex="24" id="rating3" type="
+checkbox" name="cb_rating_total_3">
+
+                                        <img src="/Content/images/StarRating3.png" title="" style="margin-top: 4px; widt
+h: 110px; height: 17px;" />
+                                                                        </li>
+                                                                        <li>
+                                                                                <input tabindex="25" id="rating2" type="
+checkbox"  name="cb_rating_total_2">
+
+                                        <img src="/Content/images/StarRating2.png" title="" style="margin-top: 4px; widt
+h: 110px; height: 17px;" />
+                                                                        </li>
+                                                                        <li>
+                                                                                <input tabindex="26" id="rating1" type="
+checkbox" name="cb_rating_total_1">
+
+                                        <img src="/Content/images/StarRating1.png" title="" style="margin-top: 4px; widt
+h: 110px; height: 17px;" />
+                                                                        </li>
+                                                                        <!--
+                                                                        <li>
+                                                                                <input tabindex="24" id="rating0" type="
+checkbox" name="cb_rating_total_0">
+                                                                                <img src="/Content/images/sparky0.png" t
+itle="" style="margin-top: 4px;" />
+                                                                        </li>
+                                                                        -->
+                                                                </ul>
+                                                                <input type="hidden" value="" id="rating_total"  name="r
+ating_total">
+                                                        </div>
+
+                                                        <div class="group upper-dropdown">
+                                                                <a class="link-info tool-tip" href="javascript:" title="
+Renewable Energy: Percentage of electricity in your plan that comes from renewable energy sources such as wind, solar, h
+ydroelectric, geothermal, landfill gas, or biomass. Providers are allowed to designate products that use electricity gen
+erated by Texas-produced natural gas, which is a relatively clear fuel, as &#8220;green.&#8221;">Info</a>
+                                                                <h3>Renewable Energy</h3>
+                                                                <select tabindex="27" id="renewable_energy_id" name="ren
+ewable_energy_id" class="f-sackers-heavy">
+                                                                        <option value="100">100% RENEWABLE</option>
+                                                                        <option value="75">76% To 99%</option>
+                                                                        <option value="50">51% To 75%</option>
+                                                                        <option value="25">26% To 50%</option>
+                                                                        <option value="0">0% To 25%</option>
+                                                                        <option value="" selected="selected">N/A</option
+>
+                                                                </select>
+                                                        </div>
+
+                                                        <div class="group upper-dropdown" id="companies-section">
+                                                                <a class="link-info tool-tip" href="javascript:" title="
+Energy Companies:  Also called retail electric providers or REPs. They sell and bill electricity and provide customer se
+rvice.">Info</a>
+                                                                <h3>Electric Companies</h3>
+                                                                <select tabindex="28" id="companies" name="companies" cl
+ass="f-sackers-heavy">
+                                                                        <option value="">All</option>
+                                                                </select>
+                                                                <input type="hidden" value="" id="company_id"  name="com
+pany_id">
+                                                        </div>
+            </div>
+
+            <div class="subheadings bc">
+                <a tabindex="29" class="btn f-sackers-heavy refresh-results" href="#">Refresh Results</a>
+                                                </div>
+
+                                        </aside>
+
+          <!-- Grid Results -->
+          <div class="main-col">
+                                                <!-- Top Filters -->
+            <div class="paging-box tc paging-grid">
+
+              <div class="sorting lower-dropdown">
+                <div class="item">
+                                                                        <label class="f-sackers-heavy" for="sort_by_fiel
+d">Sort By</label>
+                                                                        <select id="sort_by_field" name="sort_by_field"
+class="sort-by f-sackers-heavy">
+                                                                                        <option value="company_sort">COM
+PANY</option>
+                                                                                        <option value="plan_details_sort
+">RENEWABLE</option>
+                                            <option value="price_kwh1000_sort" selected="true">PRICE/kWh</option>
+
+                                                                        </select>
+                </div>
+                <div class="item">
+                                                                        <label class="f-sackers-heavy" for="pagesize">Vi
+ew</label>
+                                                                        <select id="pagesize" class="page-size-dropdown
+f-sackers-heavy">
+                                                                                        <option value="10" selected="tru
+e">10 PER PAGE</option>
+                                                                                        <option value="20" >20 PER PAGE<
+/option>
+                                                                                        <option value="40">40 PER PAGE</
+option>
+                                                                                        <option value="99999">SEE ALL</o
+ption>
+                                                                        </select>
+                </div>
+                <div class="item">
+                                                                        <a target="_blank" href="javascript:;" onclick="
+window.print();" class="print-grid-temp" title="Print plan results">
+                                                                            <img alt="print" src="/Content/images/printe
+r.png" width="16" height="16" /></a>
+                                                                        <a target="_blank" href="#" class="export-excel"
+ title="Export results to Excel">
+                                        <img alt="export to excel" src="/Content/images/excel.png" width="16" height="16
+" /></a>
+                                                                        <a target="_blank" href="#" class="export-csv" t
+itle="Export ALL offers to CSV. Ignores search results and relation to zip code. Only exports the active offers by REP C
+ompany">
+                                        <img alt="export to csv" src="/Content/images/export_csv.png" width="16" height=
+"16" /></a>
+                </div>
+              </div>
+
+              <div class="pages">
+                                                                <a class="prev" href="javascript:;"><span class="k-i-arr
+ow-w">Prev</span></a>
+                                                                <ul class="f-sackers-heavy k-pager-numbers k-reset">
+                                                                        <li class="current">1</li>
+                                                                        <li><a href="#">2</a></li>
+                                                                </ul>
+                                                                <a class="next" href="javascript:;"><span class="k-i-arr
+ow-e">Next</span></a>
+              </div>
+
+              <div class="nodisplay">
+                <a class="prev" href="javascript:;"><span class="k-i-seek-w">First Page</span></a>
+                <a class="prev" href="javascript:;"><span class="k-i-seek-e">Last Page</span></a>
+              </div>
+
+            </div>
+
+                                                <!-- Grid Header -->
+            <table id="dataTable" class="data-box">
+                <thead>
+                                                        <tr class="subheadings">
+                                                                <th scope="col" class="item td-compare"><a class="btn f-
+sackers-heavy" id="compare" href="#"></a></th>
+                                <th scope="col" class="item td-company"><a class="k-link" href="#"><span class="title">C
+ompany</span></a></th>
+                                <th scope="col" class="item td-plan"><a class="k-link" href="#"><span class="title">Plan
+ Details</span></a></th>
+                                <th scope="col" class="item td-price"><a class="k-link" href="#"><span class="title">Pri
+ce/kWh</span></a></th>
+                                <th scope="col" class="item td-details"><span class="title">Pricing Details</span></th>
+                                <th scope="col" class="item td-order"><span class="title">Ordering Info</span></th>
+                                                        </tr>
+                </thead>
+                <tbody>
+                                                        <tr><td colspan="3"></td></tr>
+                </tbody>
+            </table>
+
+                                                        <!-- Row Template 1,001 ΓÇô 2,000 kWh-->
+          <script id="rowTemplate-1000" type="text/x-kendo-tmpl">
+              <tr class="row">
+                  <td class="item td-compare">
+                      <div class="compare">
+                          <a class="arrow" href="javascript:;">Compare</a>
+                          <input title="checkbox" type="checkbox" class="chkcompare" id="plan_${ plan_id }" value=${ pla
+n_id }>
+                      </div>
+
+                      <a class="compare-mini-link hide" id="compare" href="javascript:;">Compare</a>
+                  </td>
+                  <td class="item td-company">
+                      <div class="logotype">
+
+                          <a href="${ website }" target="_blank" title="${ ResourcesWebsiteUrlToolTip } for ${ company_n
+ame }">
+                              #if (company_logo.indexOf("nologo.png") > 0 || company_logo == "") {#
+                              <h2 class="company-name-col">${ company_name }</h2>
+                              #} else {#
+                              <img alt="logo for ${ company_name }" src="${ company_logo }" style="max-height: 40px; max
+-width: 80px;">
+                              #}#
+                          </a>
+
+                          <span class="grid-element  hide">
+
+                              <div class="userratings" title="#=company_name# ${ ResourcesComplaintScoreCardToolTip }">
+                                  #if (rating_total >= 0 ){#
+                                  <table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                          <td><span class="f-sackers-medium" style="font-weight: bold; text-transform:no
+ne;" title="#=company_name# ${ ResourcesComplaintScoreCardToolTip }">${ ResourcesComplaintScoreCard }</span></td>
+                                          <td width="12px"><a class="link-info tool-tip" href="javascript:" data-html="t
+rue" title="${ ResourcesComplaintScoreInfo }">&nbsp;</a></td>
+                                      </tr>
+                                      <tr>
+                                          <td colspan="2">
+                                              <span title="#=company_name# ${ ResourcesComplaintScoreCardToolTip }" >
+
+                                                  <img src="/Content/images/StarRating#if (rating_total < 5 ) {#${rating
+_total}.png" #}else{#5.png" #}# style="border: none; margin-top: -3px;" width="90px" height="14px" />
+                                              </span>
+                                          </td>
+                                      </tr>
+                                  </table>
+                                  #}#
+                                  #if (rating_total < 0 ){#
+                                  <div class="f-sackers-medium" style="text-transform:none;">No Scorecard Data</div>
+                                  #}#
+
+                                  <table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                          <td>
+                                              #if (lang  == 'en-us' ){#
+                                              <a class="f-sackers-medium" style="font-weight: bold; text-transform:none;
+" href="/en-us/Content/Scores/#=plan_id#?c=#=company_id#" target="_blank" title="${ ResourcesComplaintHistoryToolTip }"
+>${ ResourcesComplaintHistory }</a>
+                                              # } else {#
+                                              <a class="f-sackers-medium" style="font-weight: bold; text-transform:none;
+" href="/es-es/Content/Scores/#=plan_id#?c=#=company_id#" target="_blank" title="${ ResourcesComplaintHistoryToolTip }"
+>${ ResourcesComplaintHistory }</a>
+                                              #}#
+                                          </td>
+
+                                          <td width="12px"><a class="link-info tool-tip" href="javascript:" title="${ Re
+sourcesComplaintHistoryInfo }">&nbsp;</a></td>
+                                      </tr>
+                                  </table>
+                              </div>
+
+
+                          </span>
+                      </div>
+
+                  </td>
+
+                  <td class="item td-plan">
+                      <ul class="plan-info">
+                          <li>${ plan_name }</li>
+
+                          <li class="grid-element hide">
+                              #if (rate_type != "" && rate_type != null){#
+                              #if ( rate_type == 'Fixed' ){#
+                              ${ ResourceRateTypeFixed}
+                              #}#
+
+                              #if ( rate_type == 'Variable' ){#
+                              ${ ResourceRateTypeVariable}
+                              #}#
+
+                              #if ( rate_type == 'Indexed' ){#
+                              ${ ResourceRateTypeIndexed}
+                              #}#
+
+                              #}#
+                          </li>
+                          <li class="grid-element hide">
+                              #if (term_value != "0" ){#
+                              #if (term_value == "1" ){#
+                              #= term_value# ${ ResourcesMobileHeaderMonth}
+                              #} else {#
+                              #= term_value# ${ ResourcesMobileHeaderMonths}
+                              #}#
+                              #}#
+                          </li>
+                          <li class="grid-element hide">
+                              #if ( ResourcesGridLabel_Language == 0 ){#
+                              ${ renewable_energy_id }% Renewable
+                              #} else {#
+                              ${ renewable_energy_id }% Renovable
+                              #}#
+                          </li>
+                          <li class="grid-element hide">
+                              #if (timeofuse){#
+                              #if ( ResourcesGridLabel_Language == 0 ){#
+                              Time Of Use
+                              #} else {#
+                              Tiempo de uso
+                              #}#
+                              #}#
+                          </li>
+                          <li class="grid-element hide">
+                              #if (prepaid){#
+                              #if ( ResourcesGridLabel_Language == 0 ){#
+                              Prepaid
+                              #} else {#
+                              Prepagados
+                              #}#
+                              #}#
+                          </li>
+                          <li class="grid-element hide">
+                              #if(new_customer){#
+                              <div class="f-sackers-medium" style="text-transform:none; color: rgb(180,79,47);">
+                                  #if(ResourcesGridLabel_Language == 0){# New Customers #} else {# Nuevo Cliente #}#
+                              </div>
+                              #}#
+                          </li>
+                      </ul>
+                  </td>
+                  <td class="item td-price">
+                      <div>
+                          1,000 kWh <strong class="price">${ price_kwh1000 }&cent;</strong>
+                          <div class="add-price grid-element hide">
+                              <div class="unit">500 kWh <span>${ price_kwh500 }&cent;</span></div>
+                              <div class="unit">2000 kWh <span>${ price_kwh2000 }&cent;</span></div>
+                          </div>
+                      </div>
+                  </td>
+                  <td class="item td-details">
+                      <div class="td-details">
+                          <ul class="price-info">
+                              <!-- JEC -->
+                              #if (minimum_usage){#
+                              <li class="usagedetails-link">
+                                  <a href="javascript:;" class="dataLink" data-kwh500="${ detail_kwh500 }" data-kwh1000=
+"${ detail_kwh1000 }" data-kwh2000="${ detail_kwh2000 }" title="${ ResourcesGridLabel_UsageFeeCreditLabelTip }">${ Resou
+rcesGridLabel_UsageFeeCreditLabel }</a>
+                                  <a class="link-info tool-tip" href="javascript:" title="${ ResourcesUsageFeeCreditInfo
+ }">Info</a>
+                              </li>
+                              #}#
+                              <li><span class="f-left">#= pricing_details #</span></li>
+                          </ul>
+                          <ul class="notes-info grid-element hide">
+                              <!-- <li><span class="f-left"><a id="el_fact_sheet" data-link="${ fact_sheet }" href="java
+script:;" data-des="${ ResourcesGridLabel_FactSheet }"> ${ ResourcesGridLabel_FactSheet } </a></span> <span class="f-rig
+ht"><a id="el_fact_sheet_icon" data-link="${ fact_sheet }" href="javascript:;" data-des="${ ResourcesGridLabel_FactSheet
+ }"><img alt="pdf" src="/Content/images/icon-pdf.png" width="16" height="16"></a></span></li> -->
+                              <!--<li><span class="f-left"><a id="el_terms_of_services" data-link="${ terms_of_service }
+" href="javascript:;" data-des="${ ResourcesGridLabel_TermsOfService}"> ${ ResourcesGridLabel_TermsOfService} </a></span
+> <span class="f-right"><a id="el_terms_of_services_icon" data-link="${ terms_of_service }" href="javascript:;" data-des
+="${ ResourcesGridLabel_TermsOfService}"><img alt="pdf" src="/Content/images/icon-pdf.png" width="16" height="16"></a></
+span></li>-->
+                              <li><span class="f-left"><a id="el_fact_sheet" href="${ fact_sheet }" target="_blank" titl
+e="${ ResourcesGridLabel_FactSheetToolTip }"> ${ ResourcesGridLabel_FactSheet } </a></span> <span class="f-right"><a id=
+"el_fact_sheet_icon" url="${ fact_sheet }" target="_blank" title="${ ResourcesGridLabel_FactSheetToolTip }"><img alt="pd
+f" src="/Content/images/icon-pdf.png" width="16" height="16"></a></span></li>
+                              <li><span class="f-left"><a id="el_terms_of_services" href="${ terms_of_service }" target=
+"_blank" title="${ ResourcesGridLabel_TermsOfServiceToolTip}"> ${ ResourcesGridLabel_TermsOfService} </a></span> <span c
+lass="f-right"><a id="el_terms_of_services_icon" href="${ terms_of_service }" target="_blank" title="${ ResourcesGridLab
+el_TermsOfServiceToolTip}"><img alt="pdf" src="/Content/images/icon-pdf.png" width="16" height="16"></a></span></li>
+                              #if (prepaid_url != "" && prepaid_url != null){#
+                              <li><span class="f-left"><a id="prepaid_url" href="${ prepaid_url }" target="_blank" title
+="${ ResourcesGridLabel_PrepaidUrlToolTip}"> ${ ResourcesGridLabel_PrepaidUrl} </a></span> <span class="f-right"><a id="
+prepaid_url_icon" href="${ prepaid_url }" target="_blank" title="${ ResourcesGridLabel_PrepaidUrlToolTip}"><img alt="pdf
+" src="/Content/images/icon-pdf.png" width="16" height="16"></a></span></li>
+                              #}#
+                          </ul>
+                      </div>
+                  </td>
+                  <td class="item td-order">
+
+                      <div class="info-area grid-element hide">
+                          <!-- if (go_to_plan != "" && go_to_plan != null){ <a id="el_go_to_plans" class="link-view f-sa
+ckers-heavy"  data-link="${ go_to_plan }" data-des=" ${ResourcesMobileHeaderGoToPlan}" href="javascript:;"> ${ResourcesM
+obileHeaderGoToPlan} </a> } -->
+
+
+                          <div style="text-align: center; margin: 0 auto; width: 100px;">
+                              <ul>
+                                  <li class="promotions-link">
+                                      <a href="javascript:;" title="${ResourcesMobileHeaderSpecialTermsToolTip}" data-re
+newable="${ renewable_energy_description }" data-termval="${ term_value }" data-name="${ plan_name }" data-rate="${ rate
+_type }" data-promo="${ promotions }" data-terms="${ special_terms }"> ${ResourcesMobileHeaderSpecialTerms}</a>
+                                  </li>
+                                  <!-- <li>#if (promotions != "" && promotions != null){# ${ promotions }  #}# </li> -->
+
+                              </ul>
+
+                              #if (enroll_phone != "" && enroll_phone != null){#
+                              <span title="${ResourcesEnrollPhoneToolTip}" class="phone">${ enroll_phone }</span>
+                              #if (go_to_plan != "" && go_to_plan != null){#
+                              <span>OR</span><br />
+                              #}#
+                              #}#
+
+                              #if (go_to_plan != "" && go_to_plan != null){#
+                              <div class="gotobutton" >
+                                  <a id="el_go_to_plans2" class="btn f-sackers-heavy"  href="${ go_to_plan }" title=" ${
+ResourcesMobileHeaderGoToPlanToolTip}" target="_blank"> ${ResourcesMobileHeaderGoToPlan} </a>
+                              </div>
+                              #}#
+                          </div>
+
+                      </div>
+                  </td>
+              </tr>
+              </script>
+
+              <!-- Row Template I don't know-->
+          <script id="rowTemplate-0" type="text/x-kendo-tmpl">
+                  <tr class="row">
+                      <td class="item td-compare">
+                          <div class="compare">
+                              <a class="arrow" href="javascript:;">Compare</a>
+                              <input title="checkbox" type="checkbox" class="chkcompare" id="plan_${ plan_id }" value=${
+ plan_id }>
+                          </div>
+
+                      <a class="compare-mini-link hide" id="compare" href="javascript:;">Compare</a>
+                      </td>
+
+                                                                                        <td class="item td-company">
+                                                                                                <div class="logotype">
+
+                                                    <a href="${ website }" target="_blank" title="${ ResourcesWebsiteUrl
+ToolTip } for ${ company_name }">
+                                                        #if (company_logo.indexOf("nologo.png") > 0 || company_logo == "
+") {#
+                                                        <h2 class="company-name-col">${ company_name }</h2>
+                                                        #} else {#
+                                                        <img alt="logo for ${ company_name }" src="${ company_logo }" wi
+dth="78" height="28">
+                                                        #}#
+                                                    </a>
+
+                                                                                                <span class="grid-elemen
+t  hide">
+
+                                                                                                    <div class="userrati
+ngs" title="#=company_name# ${ ResourcesComplaintScoreCardToolTip }">
+                                                                                                                #if (rat
+ing_total >= 0 ){#
+
+<table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+
+        <tr>
+
+                <td><span class="f-sackers-medium" style="font-weight: bold; text-transform:none;" title="#=company_name
+# ${ ResourcesComplaintScoreCardToolTip }">${ ResourcesComplaintScoreCard }</span></td>
+
+                <td width="12px"><a class="link-info tool-tip" href="javascript:" data-html="true" title="${ ResourcesCo
+mplaintScoreInfo }">&nbsp;</a></td>
+
+        </tr>
+
+        <tr>
+
+                <td colspan="2">
+
+                        <span title="#=company_name# ${ ResourcesComplaintScoreCardToolTip }" >
+
+
+                                                                                <img src="/Content/images/StarRating#if
+(rating_total < 5 ) {#${rating_total}.png" #}else{#5.png" #}# style="border: none; margin-top: -3px;" width="71px" heigh
+t="10px" />
+
+                        </span>
+
+                </td>
+
+        </tr>
+
+</table>
+                                                                                                                #}#
+                                                                                                                #if (rat
+ing_total < 0 ){#
+
+<div class="f-sackers-medium" style="text-transform:none;">No Scorecard Data</div>
+                                                                                                                #}#
+
+                                                                                                                <table s
+tyle="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+
+        <td><a class="f-sackers-medium" style="font-weight: bold; text-transform:none;" href="/en-us/Content/Scores?c=#=
+company_id#&id=#=plan_id#" target="_blank" title="${ ResourcesComplaintHistoryToolTip }" >Complaint History</a></td>
+
+        <td width="12px"><a class="link-info tool-tip" href="javascript:" title="${ ResourcesComplaintHistoryInfo }">&nb
+sp;</a></td>
+
+</tr>
+                                                                                                                </table>
+
+                                                                                                    </div>
+
+
+                                                                                                    </span>
+
+                      </div>
+                      </td>
+
+                      <td class="item td-plan">
+                                                                                                <ul class="plan-info">
+                                                                                                    <li class="grid-elem
+ent hide">
+                                                                                                        #if (rate_type !
+= "" && rate_type != null){#
+
+#if ( rate_type == 'Fixed' ){#
+
+                ${ ResourceRateTypeFixed}
+
+#}#
+
+
+#if ( rate_type == 'Variable' ){#
+
+                ${ ResourceRateTypeVariable}
+
+#}#
+
+
+#if ( rate_type == 'Indexed' ){#
+
+                ${ ResourceRateTypeIndexed}
+
+#}#
+
+                                                                                                        #}#
+                                                                                                    </li>
+                                                                                                    <li class="grid-elem
+ent hide">
+                                                                                                        #if (term_value
+!= "0" ){#
+
+#if (term_value == "1" ){#
+
+        #= term_value# ${ ResourcesMobileHeaderMonth}
+
+#} else {#
+
+        #= term_value# ${ ResourcesMobileHeaderMonths}
+
+#}#
+                                                                                                        #}#
+                                                                                                    </li>
+                                                                                                    <li class="grid-elem
+ent hide">
+
+#if ( ResourcesGridLabel_Language == 0 ){#
+
+                ${ renewable_energy_id }% Renewable
+
+#} else {#
+
+                ${ renewable_energy_id }% Renovable
+
+#}#
+                                                                                                    </li>
+                                                                                                    <li class="grid-elem
+ent hide">
+                                                                                                        #if (timeofuse){
+#
+
+#if ( ResourcesGridLabel_Language == 0 ){#
+
+                Time Of Use
+
+#} else {#
+
+                Tiempo de uso
+
+#}#
+                                                                                                        #}#
+                                                                                                    </li>
+                                                                                                    <li class="grid-elem
+ent hide">
+                                                                                                        #if (prepaid){#
+
+#if ( ResourcesGridLabel_Language == 0 ){#
+
+                Prepaid
+
+#} else {#
+
+                Prepagados
+
+#}#
+                                                                                                        #}#
+                                                                                                    </li>
+                                                    <li class="grid-element hide">
+                                                        #if(new_customer){#
+                                                        <div class="f-sackers-medium" style="text-transform:none; color:
+ rgb(180,79,47);">
+                                                            #if(ResourcesGridLabel_Language == 0){# New Customers #} els
+e {# Nuevo Cliente #}#
+                                                        </div>
+                                                        #}#
+                                                    </li>
+                                                                                                </ul>
+                      </td>
+                      <td class="item td-price">
+                                                                                                <div>
+                                      1,000 kWh <strong class="price">${ price_kwh1000 }&cent;</strong>
+                                      <div class="add-price grid-element hide">
+                                              <div class="unit">500 kWh <span>${ price_kwh500 }&cent;</span></div>
+                                              <div class="unit">2000 kWh <span>${ price_kwh2000 }&cent;</span></div>
+                                      </div>
+                              </div>
+                      </td>
+                      <td class="item td-details">
+                                                                                                <div class="td-details">
+
+                                                                                                    <ul class="price-inf
+o">
+                                                                                                        <li class="usage
+details-link">
+                                                                                                                <a href=
+"javascript:;" class="dataLink"  data-kwh500="${ detail_kwh500 }" data-kwh1000="${ detail_kwh1000 }" data-kwh2000="${ de
+tail_kwh2000 }" title="${ ResourcesGridLabel_UsageFeeCreditLabelTip }" >${ ResourcesGridLabel_UsageFeeCreditLabel }</a>
+                                                                                                                <a class
+="link-info tool-tip" href="javascript:" title="${ ResourcesUsageFeeCreditInfo }"><span>Info</span></a>
+                                                                                                        </li>
+                                                                                                        <li><span class=
+"f-left">#= pricing_details #</span></li>
+                                                                                                    </ul>
+                                                                                                    <ul class="notes-inf
+o grid-element hide">
+                                                                                                        <li><span class=
+"f-left"><a id="el_fact_sheet" href="${ fact_sheet }" target="_blank" title="${ ResourcesGridLabel_FactSheetToolTip }">
+${ ResourcesGridLabel_FactSheet } </a></span> <span class="f-right"><a id="el_fact_sheet_icon" url="${ fact_sheet }" tar
+get="_blank" title="${ ResourcesGridLabel_FactSheetToolTip }"><img alt="pdf" src="/Content/images/icon-pdf.png" width="1
+6" height="16"></a></span></li>
+                                                                                                        <li><span class=
+"f-left"><a id="el_terms_of_services" href="${ terms_of_service }" target="_blank" title="${ ResourcesGridLabel_TermsOfS
+erviceToolTip}"> ${ ResourcesGridLabel_TermsOfService} </a></span> <span class="f-right"><a id="el_terms_of_services_ico
+n" href="${ terms_of_service }" target="_blank" title="${ ResourcesGridLabel_TermsOfServiceToolTip}"><img alt="pdf" src=
+"/Content/images/icon-pdf.png" width="16" height="16"></a></span></li>
+                                                                                                        #if (prepaid_url
+ != "" && prepaid_url != null){#
+                                                                                                                <li><spa
+n class="f-left"><a id="prepaid_url" href="${ prepaid_url }" target="_blank" title="${ ResourcesGridLabel_PrepaidUrlTool
+Tip}"> ${ ResourcesGridLabel_PrepaidUrl} </a></span> <span class="f-right"><a id="prepaid_url_icon" href="${ prepaid_url
+ }" target="_blank" title="${ ResourcesGridLabel_PrepaidUrlToolTip}"><img alt="pdf" src="/Content/images/icon-pdf.png" w
+idth="16" height="16"></a></span></li>
+                                                                                                        #}#
+                                                                                                    </ul>
+                                  </div>
+                      </td>
+                      <td class="item td-order">
+                                                                                                <div class="info-area gr
+id-element hide">
+
+                                                                                                    <div style="text-ali
+gn: center; margin: 0 auto; width: 100px;">
+                                                                                                        <ul>
+                                                                                                                <li clas
+s="promotions-link">
+
+<a href="javascript:;" title="${ResourcesMobileHeaderSpecialTermsToolTip}" data-renewable="${ renewable_energy_descripti
+on }" data-termval="${ term_value }" data-name="${ plan_name }" data-rate="${ rate_type }" data-promo="${ promotions }"
+data-terms="${ special_terms }"> ${ResourcesMobileHeaderSpecialTerms}</a>
+                                                                                                                </li>
+                                                                                                                <!-- <li
+>#if (promotions != "" && promotions != null){# ${ promotions }  #}# </li> -->
+                                                                                                        </ul>
+                                                                                                        #if (enroll_phon
+e != "" && enroll_phone != null){#
+                                                                                                                <span ti
+tle="${ResourcesEnrollPhoneToolTip}" class="phone">${ enroll_phone }</span>
+                                                                                                                #if (go_
+to_plan != "" && go_to_plan != null){#
+
+<span>OR</span><br />
+                                                                                                                #}#
+                                                                                                        #}#
+
+                                                                                                        #if (go_to_plan
+!= "" && go_to_plan != null){#
+                                                                                                                <div cla
+ss="gotobutton" >
+                                                                                                                <a id="e
+l_go_to_plans2" class="btn f-sackers-heavy refresh-results"  href="${ go_to_plan }" title=" ${ResourcesMobileHeaderGoToP
+lanToolTip}" target="_blank"> ${ResourcesMobileHeaderGoToPlan} </a>
+                                                                                                                </div>
+                                                                                                        #}#
+                                                                                                    </div>
+
+                                                                                                </div>
+                          </td>
+                  </tr>
+              </script>
+
+              <!-- Row Template 500 ΓÇô 1,000 kWh -->
+          <script id="rowTemplate-500" type="text/x-kendo-tmpl">
+              <tr class="row">
+                  <td class="item td-compare">
+                      <div class="compare">
+                          <a class="arrow" href="javascript:;" >Compare</a>
+                          <input title="checkbox" type="checkbox" class="chkcompare" id="plan_${ plan_id }" value=${ pla
+n_id }>
+                      </div>
+
+                      <a class="compare-mini-link hide" id="compare" href="javascript:;">Compare</a>
+                  </td>
+                  <td class="item td-company">
+                      <div class="logotype">
+
+                          <a href="${ website }" target="_blank" title="${ ResourcesWebsiteUrlToolTip } for ${ company_n
+ame }">
+                              #if (company_logo.indexOf("nologo.png") > 0 || company_logo == "") {#
+                              <h2 class="company-name-col">${ company_name }</h2>
+                              #} else {#
+                              <img alt="logo for ${ company_name }" src="${ company_logo }" width="78" height="28">
+                              #}#
+                          </a>
+
+                          <span class="grid-element  hide">
+
+                              <div class="userratings" title="#=company_name# ${ ResourcesComplaintScoreCardToolTip }">
+                                  #if (rating_total >= 0 ){#
+                                  <table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                          <td><span class="f-sackers-medium" style="font-weight: bold; text-transform:no
+ne;" title="#=company_name# ${ ResourcesComplaintScoreCardToolTip }">${ ResourcesComplaintScoreCard }</span></td>
+                                          <td width="12px"><a class="link-info tool-tip" href="javascript:" data-html="t
+rue" title="${ ResourcesComplaintScoreInfo }">&nbsp;</a></td>
+                                      </tr>
+                                      <tr>
+                                          <td colspan="2">
+                                              <span title="#=company_name# ${ ResourcesComplaintScoreCardToolTip }" >
+
+                                                  <img src="/Content/images/StarRating#if (rating_total < 5 ) {#${rating
+_total}.png" #}else{#5.png" #}# style="border: none; margin-top: -3px;" width="71px" height="10px" />
+                                              </span>
+                                          </td>
+                                      </tr>
+                                  </table>
+                                  #}#
+                                  #if (rating_total < 0 ){#
+                                  <div class="f-sackers-medium" style="text-transform:none;">No Scorecard Data</div>
+                                  #}#
+
+                                  <table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                          <td><a class="f-sackers-medium" style="font-weight: bold; text-transform:none;
+" href="/en-us/Content/Scores?c=#=company_id#&id=#=plan_id#" target="_blank" title="${ ResourcesComplaintHistoryToolTip
+}" >Complaint History</a></td>
+                                          <td width="12px"><a class="link-info tool-tip" href="javascript:" title="${ Re
+sourcesComplaintHistoryInfo }">&nbsp;</a></td>
+                                      </tr>
+                                  </table>
+                              </div>
+
+
+                          </span>
+
+                      </div>
+                  </td>
+
+                  <td class="item td-plan">
+                      <ul class="plan-info">
+                          <li>${ plan_name }</li>
+                          <li class="grid-element hide">
+                              #if (rate_type != "" && rate_type != null){#
+                              #if ( rate_type == 'Fixed' ){#
+                              ${ ResourceRateTypeFixed}
+                              #}#
+
+                              #if ( rate_type == 'Variable' ){#
+                              ${ ResourceRateTypeVariable}
+                              #}#
+
+                              #if ( rate_type == 'Indexed' ){#
+                              ${ ResourceRateTypeIndexed}
+                              #}#
+
+                              #}#
+                          </li>
+                          <li class="grid-element hide">
+                              #if (term_value != "0" ){#
+                              #if (term_value == "1" ){#
+                              #= term_value# ${ ResourcesMobileHeaderMonth}
+                              #} else {#
+                              #= term_value# ${ ResourcesMobileHeaderMonths}
+                              #}#
+                              #}#
+                          </li>
+                          <li class="grid-element hide">
+                              #if ( ResourcesGridLabel_Language == 0 ){#
+                              ${ renewable_energy_id }% Renewable
+                              #} else {#
+                              ${ renewable_energy_id }% Renovable
+                              #}#
+                          </li>
+                          <li class="grid-element hide">
+                              #if (timeofuse){#
+                              #if ( ResourcesGridLabel_Language == 0 ){#
+                              Time Of Use
+                              #} else {#
+                              Tiempo de uso
+                              #}#
+                              #}#
+                          </li>
+                          <li class="grid-element hide">
+                              #if (prepaid){#
+                              #if ( ResourcesGridLabel_Language == 0 ){#
+                              Prepaid
+                              #} else {#
+                              Prepagados
+                              #}#
+                              #}#
+                          </li>
+                          <li class="grid-element hide">
+                              #if(new_customer){#
+                              <div class="f-sackers-medium" style="text-transform:none; color: rgb(180,79,47);">
+                                  #if(ResourcesGridLabel_Language == 0){# New Customers #} else {# Nuevo Cliente #}#
+                              </div>
+                              #}#
+                          </li>
+                      </ul>
+                  </td>
+                  <td class="item td-price">
+                      <div>
+                          500 kWh <strong class="price">${ price_kwh500 }&cent;</strong>
+                          <div class="add-price grid-element hide">
+                              <div class="unit">1,000 kWh <span>${ price_kwh1000 }&cent;</span></div>
+                              <div class="unit">2000 kWh <span>${ price_kwh2000 }&cent;</span></div>
+                          </div>
+                      </div>
+                  </td>
+                  <td class="item td-details">
+                      <div class="td-details">
+                          <ul class="price-info">
+                              <li class="usagedetails-link">
+                                  <a href="javascript:;" class="dataLink"  data-kwh500="${ detail_kwh500 }" data-kwh1000
+="${ detail_kwh1000 }" data-kwh2000="${ detail_kwh2000 }" title="${ ResourcesGridLabel_UsageFeeCreditLabelTip }" >${ Res
+ourcesGridLabel_UsageFeeCreditLabel }</a>
+                                  <a class="link-info tool-tip" href="javascript:" title="${ ResourcesUsageFeeCreditInfo
+ }"><span>Info</span></a>
+                              </li>
+                              <li><span class="f-left">#= pricing_details #</span></li>
+                          </ul>
+                          <ul class="notes-info grid-element hide">
+                              <li><span class="f-left"><a id="el_fact_sheet" href="${ fact_sheet }" target="_blank" titl
+e="${ ResourcesGridLabel_FactSheetToolTip }"> ${ ResourcesGridLabel_FactSheet } </a></span> <span class="f-right"><a id=
+"el_fact_sheet_icon" url="${ fact_sheet }" target="_blank" title="${ ResourcesGridLabel_FactSheetToolTip }"><img alt="pd
+f" src="/Content/images/icon-pdf.png" width="16" height="16"></a></span></li>
+                              <li><span class="f-left"><a id="el_terms_of_services" href="${ terms_of_service }" target=
+"_blank" title="${ ResourcesGridLabel_TermsOfServiceToolTip}"> ${ ResourcesGridLabel_TermsOfService} </a></span> <span c
+lass="f-right"><a id="el_terms_of_services_icon" href="${ terms_of_service }" target="_blank" title="${ ResourcesGridLab
+el_TermsOfServiceToolTip}"><img alt="pdf" src="/Content/images/icon-pdf.png" width="16" height="16"></a></span></li>
+                              #if (prepaid_url != "" && prepaid_url != null){#
+                              <li><span class="f-left"><a id="prepaid_url" href="${ prepaid_url }" target="_blank" title
+="${ ResourcesGridLabel_PrepaidUrlToolTip}"> ${ ResourcesGridLabel_PrepaidUrl} </a></span> <span class="f-right"><a id="
+prepaid_url_icon" href="${ prepaid_url }" target="_blank" title="${ ResourcesGridLabel_PrepaidUrlToolTip}"><img alt="pdf
+" src="/Content/images/icon-pdf.png" width="16" height="16"></a></span></li>
+                              #}#
+                          </ul>
+                      </div>
+                  </td>
+                  <td class="item td-order">
+
+                      <div class="info-area grid-element hide">
+
+                          <div style="text-align: center; margin: 0 auto; width: 100px;">
+                              <ul>
+                                  <li class="promotions-link">
+                                      <a href="javascript:;" title="${ResourcesMobileHeaderSpecialTermsToolTip}" data-re
+newable="${ renewable_energy_description }" data-termval="${ term_value }" data-name="${ plan_name }" data-rate="${ rate
+_type }" data-promo="${ promotions }" data-terms="${ special_terms }"> ${ResourcesMobileHeaderSpecialTerms}</a>
+                                  </li>
+                                  <!-- <li>#if (promotions != "" && promotions != null){# ${ promotions }  #}# </li> -->
+
+                              </ul>
+
+                              #if (enroll_phone != "" && enroll_phone != null){#
+                              <span title="${ResourcesEnrollPhoneToolTip}" class="phone">${ enroll_phone }</span>
+                              #if (go_to_plan != "" && go_to_plan != null){#
+                              <span>OR</span><br />
+                              #}#
+                              #}#
+
+                              #if (go_to_plan != "" && go_to_plan != null){#
+                              <div class="gotobutton" >
+                                  <a id="el_go_to_plans2" class="btn f-sackers-heavy refresh-results"  href="${ go_to_pl
+an }" title=" ${ResourcesMobileHeaderGoToPlanToolTip}" target="_blank"> ${ResourcesMobileHeaderGoToPlan} </a>
+                              </div>
+                              #}#
+                          </div>
+
+                      </div>
+                  </td>
+              </tr>
+              </script>
+
+              <!-- Row Template More than 2,000 kWh-->
+          <script id="rowTemplate-2000" type="text/x-kendo-tmpl">
+              <tr class="row">
+                  <td class="item td-compare">
+                      <div class="compare">
+                          <a class="arrow" href="javascript:;" >Compare</a>
+                          <input title="checkbox" type="checkbox" class="chkcompare" id="plan_${ plan_id }" value=${ pla
+n_id }>
+                      </div>
+
+                      <a class="compare-mini-link hide" id="compare" href="javascript:;">Compare</a>
+                  </td>
+                  <td class="item td-company">
+                      <div class="logotype">
+
+                          <a href="${ website }" target="_blank" title="${ ResourcesWebsiteUrlToolTip } for ${ company_n
+ame }">
+                              #if (company_logo.indexOf("nologo.png") > 0 || company_logo == "") {#
+                              <h2 class="company-name-col">${ company_name }</h2>
+                              #} else {#
+                              <img alt="logo for ${ company_name }" src="${ company_logo }" width="78" height="28">
+                              #}#
+                          </a>
+
+                          <span class="grid-element  hide">
+
+                              <div class="userratings" title="#=company_name# ${ ResourcesComplaintScoreCardToolTip }">
+                                  #if (rating_total >= 0 ){#
+                                  <table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                          <td><span class="f-sackers-medium" style="font-weight: bold; text-transform:no
+ne;" title="#=company_name# ${ ResourcesComplaintScoreCardToolTip }" >${ ResourcesComplaintScoreCard }</span></td>
+                                          <td width="12px"><a class="link-info tool-tip" href="javascript:" data-html="t
+rue" title="${ ResourcesComplaintScoreInfo }">&nbsp;</a></td>
+                                      </tr>
+                                      <tr>
+                                          <td colspan="2">
+                                              <span title="#=company_name# ${ ResourcesComplaintScoreCardToolTip }" >
+
+                                                  <img src="/Content/images/StarRating#if (rating_total < 5 ) {#${rating
+_total}.png" #}else{#5.png" #}# style="border: none; margin-top: -3px;" width="71px" height="10px" />
+                                              </span>
+                                          </td>
+                                      </tr>
+                                  </table>
+                                  #}#
+                                  #if (rating_total < 0 ){#
+                                  <div class="f-sackers-medium" style="text-transform:none;">No Scorecard Data</div>
+                                  #}#
+
+                                  <table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                          <td><a class="f-sackers-medium" style="font-weight: bold; text-transform:none;
+" href="/en-us/Content/Scores?c=#=company_id#&id=#=plan_id#" target="_blank" title="${ ResourcesComplaintHistoryToolTip
+}" >Complaint History</a></td>
+                                          <td width="12px"><a class="link-info tool-tip" href="javascript:" title="${ Re
+sourcesComplaintHistoryInfo }">&nbsp;</a></td>
+                                      </tr>
+                                  </table>
+                              </div>
+
+
+                          </span>
+
+                      </div>
+                  </td>
+
+                  <td class="item td-plan">
+                      <ul class="plan-info">
+                          <li>${ plan_name }</li>
+                          <li class="grid-element hide">
+                              #if (rate_type != "" && rate_type != null){#
+                              #if ( rate_type == 'Fixed' ){#
+                              ${ ResourceRateTypeFixed}
+                              #}#
+
+                              #if ( rate_type == 'Variable' ){#
+                              ${ ResourceRateTypeVariable}
+                              #}#
+
+                              #if ( rate_type == 'Indexed' ){#
+                              ${ ResourceRateTypeIndexed}
+                              #}#
+
+                              #}#
+                          </li>
+                          <li class="grid-element hide">
+                              #if (term_value != "0" ){#
+                              #if (term_value == "1" ){#
+                              #= term_value# ${ ResourcesMobileHeaderMonth}
+                              #} else {#
+                              #= term_value# ${ ResourcesMobileHeaderMonths}
+                              #}#
+                              #}#
+                          </li>
+                          <li class="grid-element hide">
+                              #if ( ResourcesGridLabel_Language == 0 ){#
+                              ${ renewable_energy_id }% Renewable
+                              #} else {#
+                              ${ renewable_energy_id }% Renovable
+                              #}#
+                          </li>
+                          <li class="grid-element hide">
+                              #if (timeofuse){#
+                              #if ( ResourcesGridLabel_Language == 0 ){#
+                              Time Of Use
+                              #} else {#
+                              Tiempo de uso
+                              #}#
+                              #}#
+                          </li>
+                          <li class="grid-element hide">
+                              #if (prepaid){#
+                              #if ( ResourcesGridLabel_Language == 0 ){#
+                              Prepaid
+                              #} else {#
+                              Prepagados
+                              #}#
+                              #}#
+                          </li>
+                          <li class="grid-element hide">
+                              #if(new_customer){#
+                              <div class="f-sackers-medium" style="text-transform:none; color: rgb(180,79,47);">
+                                  #if(ResourcesGridLabel_Language == 0){# New Customers #} else {# Nuevo Cliente #}#
+                              </div>
+                              #}#
+                          </li>
+                      </ul>
+                  </td>
+                  <td class="item td-price">
+                      <div>
+                          2000 kWh <strong class="price">${ price_kwh2000 }&cent;</strong>
+                          <div class="add-price grid-element hide">
+                              <div class="unit">500 kWh <span>${ price_kwh500 }&cent;</span></div>
+                              <div class="unit">1,000 kWh <span>${ price_kwh1000 }&cent;</span></div>
+                          </div>
+                      </div>
+                  </td>
+                  <td class="item td-details">
+                      <div class="td-details">
+                          <ul class="price-info">
+                              <li class="usagedetails-link">
+                                  <a href="javascript:;" class="dataLink" data-kwh500="${ detail_kwh500 }" data-kwh1000=
+"${ detail_kwh1000 }" data-kwh2000="${ detail_kwh2000 }" title="${ ResourcesGridLabel_UsageFeeCreditLabelTip }" >${ Reso
+urcesGridLabel_UsageFeeCreditLabel }</a>
+                                  <a class="link-info tool-tip" href="javascript:" title="${ ResourcesUsageFeeCreditInfo
+ }"><span>Info</span></a>
+                              </li>
+                              <li><span class="f-left">#= pricing_details #</span></li>
+                          </ul>
+                          <ul class="notes-info grid-element hide">
+                              <li><span class="f-left"><a id="el_fact_sheet" href="${ fact_sheet }" target="_blank" titl
+e="${ ResourcesGridLabel_FactSheetToolTip }"> ${ ResourcesGridLabel_FactSheet } </a></span> <span class="f-right"><a id=
+"el_fact_sheet_icon" url="${ fact_sheet }" target="_blank" title="${ ResourcesGridLabel_FactSheetToolTip }"><img alt="pd
+f" src="/Content/images/icon-pdf.png" width="16" height="16"></a></span></li>
+                              <li><span class="f-left"><a id="el_terms_of_services" href="${ terms_of_service }" target=
+"_blank" title="${ ResourcesGridLabel_TermsOfServiceToolTip}"> ${ ResourcesGridLabel_TermsOfService} </a></span> <span c
+lass="f-right"><a id="el_terms_of_services_icon" href="${ terms_of_service }" target="_blank" title="${ ResourcesGridLab
+el_TermsOfServiceToolTip}"><img alt="pdf" src="/Content/images/icon-pdf.png" width="16" height="16"></a></span></li>
+                              #if (prepaid_url != "" && prepaid_url != null){#
+                              <li><span class="f-left"><a id="prepaid_url" href="${ prepaid_url }" target="_blank" title
+="${ ResourcesGridLabel_PrepaidUrlToolTip}"> ${ ResourcesGridLabel_PrepaidUrl} </a></span> <span class="f-right"><a id="
+prepaid_url_icon" href="${ prepaid_url }" target="_blank" title="${ ResourcesGridLabel_PrepaidUrlToolTip}"><img alt="pdf
+" src="/Content/images/icon-pdf.png" width="16" height="16"></a></span></li>
+                              #}#
+                          </ul>
+                      </div>
+                  </td>
+                  <td class="item td-order">
+
+                      <div class="info-area grid-element hide">
+
+                          <div style="text-align: center; margin: 0 auto; width: 100px;">
+                              <ul>
+                                  <li class="promotions-link">
+                                      <a href="javascript:;" title="${ResourcesMobileHeaderSpecialTermsToolTip}" data-re
+newable="${ renewable_energy_description }" data-termval="${ term_value }" data-name="${ plan_name }" data-rate="${ rate
+_type }" data-promo="${ promotions }" data-terms="${ special_terms }"> ${ResourcesMobileHeaderSpecialTerms}</a>
+                                  </li>
+                                  <!-- <li>#if (promotions != "" && promotions != null){# ${ promotions }  #}# </li> -->
+
+                              </ul>
+
+                              #if (enroll_phone != "" && enroll_phone != null){#
+                              <span title="${ResourcesEnrollPhoneToolTip}" class="phone">${ enroll_phone }</span>
+                              #if (go_to_plan != "" && go_to_plan != null){#
+                              <span>OR</span><br />
+                              #}#
+                              #}#
+
+                              #if (go_to_plan != "" && go_to_plan != null){#
+                              <div class="gotobutton" >
+                                  <a id="el_go_to_plans2" class="btn f-sackers-heavy refresh-results"  href="${ go_to_pl
+an }" title=" ${ResourcesMobileHeaderGoToPlanToolTip}" target="_blank"> ${ResourcesMobileHeaderGoToPlan} </a>
+                              </div>
+                              #}#
+                          </div>
+
+                      </div>
+                  </td>
+              </tr>
+              </script>
+
+<script>
+$(document).ready(function () {
+
+        var pageLoaded = false;
+        var zipcode = $('#resultszipcode').val();
+        var estimated_use = $('#estimated_use').val();
+        var company_unique_id = $('#company_id').val();
+        var company_tdu_id = $('#company_tdu_id').val();
+        var company_type = $('#company_type').val();
+        var energy_companies = "TduCompaniesByZip";
+        if (company_type.indexOf("TDU") == -1)
+                energy_companies = "RepCompaniesByZip";
+
+        $('#company_tdu').empty();
+        //$('#company_tdu').append('<option value="">' + ResourcesPlansLabel_EnergyCompaniesAll + '</option>');
+        // Get TDU companies first
+        dataObject = {
+                parameters: {
+                                method: 'TduCompaniesByZip',
+                                zip_code: zipcode,
+                                include_details: false,
+                                language: parseInt(ResourcesGridLabel_Language)
+                }
+        };
+
+$.ajax({
+  type: "POST",
+  url: api,
+  data: JSON.stringify(dataObject),
+  contentType: "application/json; charset=utf-8",
+  success: function (data) {
+      var json = $.parseJSON(data);
+      json.sort(SortByName);
+      if (json.length >= 2) {
+        //$('#utility_companies').css('display', 'table');
+        //$('#company_tdu').append('<option value="">' + ResourcesPlansLabel_EnergyCompaniesAll + '</option>');
+          $('#company_type').val("TDU");
+          $.each(json, function (i, company) {
+              var selection = '';
+              //var hasCompanyId = '';
+              if (company_tdu_id != "") {
+                  if (company.company_id.indexOf(company_tdu_id) >= 0)
+                      selection = 'selected="selected"';
+              }
+
+              $('#company_tdu').append('<option  ' + selection + ' value="' + company.company_id + '">' + company.compan
+y_name + '</option>');
+          });
+          $("#company_tdu").val(company_tdu_id).attr("selected", "selected");
+          $('#company_tdu').prev().prev().html($("#company_tdu option:selected").text());
+          var u_company = $('#company_tdu').prev().prev().html();
+          if (u_company.length > 12) {
+              u_company = u_company.slice(0, 12) + '...';
+          }
+          $('#company_tdu').prev().prev().html(u_company);
+      } else {
+        //$("#utility_companies").css('display', 'none');
+        $.each(json, function (i, company) {
+                $('#company_tdu').append('<option selected="selected" value="' + company.company_id + '">' + company.com
+pany_name + '</option>');
+        });
+        $("#company_tdu").val(company_tdu_id).attr("selected", "selected");
+        $('#company_tdu').prev().prev().html($("#company_tdu option:selected").text());
+        var u_company = $('#company_tdu').prev().prev().html();
+        if (u_company.length > 12) {
+                u_company = u_company.slice(0, 12) + '...';
+        }
+        $('#company_tdu').prev().prev().html(u_company);
+
+                //$(".group-box .group:first-child").next().css('border', 'none');
+      }
+  },
+  error: function (jqXHR, exception) {
+      return true;
+  }
+});
+
+var dataObject = {
+  parameters: {
+      method: 'RepCompaniesByZip',
+      zip_code: zipcode,
+      language: parseInt(ResourcesGridLabel_Language)
+  }
+};
+
+$.ajax({
+  type: "POST",
+  url: api,
+  data: JSON.stringify(dataObject),
+  contentType: "application/json; charset=utf-8",
+  success: function (data) {
+      var json = $.parseJSON(data);
+      json.sort(SortByName);
+      $.each(json, function (i, company) {
+          var selection = '';
+          //var hasCompanyId = '';
+          if (company_unique_id != "") {
+              if (company.company_unique_id.indexOf(company_unique_id) >= 0)
+                  selection = 'selected="selected"';
+          }
+          $('#companies').append('<option ' + selection + ' value="' + company.company_unique_id + '">' + company.compan
+y_name + '</option>');
+      });
+      $("#companies").val(company_unique_id).attr("selected", "selected");
+      $('#companies').prev().prev().html($("#companies option:selected").text());
+      var company = $('#companies').prev().prev().html();
+      if (company.length > 12) {
+          company = company.slice(0, 12) + '...';
+      }
+      $('#companies').prev().prev().html(company);
+  },
+  error: function (jqXHR, exception) {
+      console.log(jqXHR);
+  }
+});
+
+$("#dataTable").empty();
+$("#dataTable").kendoGrid();
+
+var zipcode = $('#resultszipcode').val();
+var estimated_use = $('#estimated_use').val();
+var estimated_use_fake = estimated_use;
+if (estimated_use == 0)
+  estimated_use_fake = 1000;
+//var company_id = $('#company_id').val();
+var plan_type = '';
+($('#cb1').prop('checked')) ? plan_type += '1,' : '';
+($('#cb2').prop('checked')) ? plan_type += '0,' : '';
+($('#cb3').prop('checked')) ? plan_type += '2,' : '';
+if (plan_type.length) {
+  plan_type = plan_type.substr(0, plan_type.length - 1);
+}
+
+var plan_mo_from = $('#plan_mo_from').val();
+var plan_mo_to = $('#plan_mo_to').val();
+
+//var contract_length = '';
+//($('#cl1').prop('checked')) ? contract_length += '24,' : '';
+//($('#cl2').prop('checked')) ? contract_length += '12,' : '';
+//($('#cl3').prop('checked')) ? contract_length += '6,' : '';
+//($('#cl4').prop('checked')) ? contract_length += '1,' : '';
+//if (contract_length.length) {
+//  contract_length = contract_length.substr(0, contract_length.length - 1);
+//}
+
+var rating_length = '';
+($('#rating0').prop('checked')) ? rating_length += '0,' : '';
+($('#rating1').prop('checked')) ? rating_length += '1,' : '';
+($('#rating2').prop('checked')) ? rating_length += '2,' : '';
+($('#rating3').prop('checked')) ? rating_length += '3,' : '';
+($('#rating4').prop('checked')) ? rating_length += '4,' : '';
+($('#rating5').prop('checked')) ? rating_length += '5,' : '';
+if (rating_length.length) {
+        rating_length = rating_length.substr(0, rating_length.length - 1);
+        ('#rating_total').val(rating_length);
+}
+
+var min_usage_plan = $('#min_usage_plan').val();
+
+var zipcode = $('#resultszipcode').val();
+var dataResultsObject = {
+  parameters: {
+      method: 'plans',
+      zip_code: zipcode,
+      company_tdu_id: (company_tdu_id) ? company_tdu_id : '',
+      company_unique_id: (company_unique_id) ? company_unique_id : '',
+        //contract_length: (contract_length.length) ? contract_length : '',
+      plan_mo_from: (plan_mo_from) ? plan_mo_from : '',
+      plan_mo_to: (plan_mo_to) ? plan_mo_to : '',
+      estimated_use: (estimated_use) ? parseInt(estimated_use) : '',
+      plan_type: (plan_type.length) ? plan_type : '',
+      rating_total: (rating_length.length) ? rating_length : '',
+      include_details: true,
+      language: parseInt(ResourcesGridLabel_Language),
+      min_usage_plan: (min_usage_plan) ? min_usage_plan : ''
+  }
+};
+
+var data_source = new kendo.data.DataSource({
+  transport: {
+      read: function (options) {
+          $.ajax({
+              type: "POST",
+              url: api,
+              contentType: "application/json; charset=utf-8",
+              data: JSON.stringify(dataResultsObject),
+              success: function (msg) {
+                  var json = $.parseJSON(msg);
+                  //var min_fee = 400000;
+                  //var max_fee = 0;
+                  //var min_price = 400000;
+                  //var max_price = 0;
+
+                  //$.each(json, function (i, plans) {
+                      //if (plans.min_fee_value < min_fee)
+                      //    min_fee = plans.min_fee_value;
+
+                      //if (plans.min_fee_value > max_fee)
+                      //    max_fee = plans.min_fee_value;
+
+                      //if (estimated_use == 500) {
+                      //    if (plans.price_kwh500 < min_price)
+                      //        min_price = plans.price_kwh500;
+
+                      //    if (plans.price_kwh500 > max_price)
+                      //        max_price = plans.price_kwh500;
+                      //} else if (estimated_use == 2000) {
+                      //    if (plans.price_kwh2000 < min_price)
+                      //        min_price = plans.price_kwh2000;
+
+                      //    if (plans.price_kwh2000 > max_price)
+                      //        max_price = plans.price_kwh2000;
+                      //} else {
+                      //    if (plans.price_kwh1000 < min_price)
+                      //        min_price = plans.price_kwh1000;
+
+                      //    if (plans.price_kwh1000 > max_price)
+                      //        max_price = plans.price_kwh1000;
+                      //}
+                  //});
+                  //if ((min_fee == 400000 && max_fee == 0) || (max_fee == 0 && min_fee == 0)) { min_fee = ''; max_fee =
+ ''; }
+                  //if ((min_price == 400000 && max_price == 0) || (max_price == 0 && min_price == 0)) { min_price = '';
+ max_price = ''; }
+
+                  //$("#price_from").val(min_price);
+                 // $("#price_to").val(max_price);
+                  //$("#monthly_fee_from").val(min_fee);
+                  //$("#monthly_fee_to").val(max_fee);
+                  $(".refresh-results").removeClass("button-plans");
+                  $(".refresh-results").addClass("btn");
+                  options.success(json);
+              }
+          });
+      }
+  },
+  pageSize: 10,
+  //sort: [{ field: "rating_total", dir: "desc" }, { field: "price_kwh" + estimated_use_fake, dir: "asc" }, { field: "so
+rt_key" + estimated_use_fake, dir: "asc" }] //JEC this was to default the sort by rating, then price etc
+  sort: [{ field: "price_kwh" + estimated_use_fake, dir: "asc" }, { field: "sort_key" + estimated_use_fake, dir: "asc" }
+]
+});
+
+$("#dataTable").kendoGrid({
+  dataSource: data_source,
+  rowTemplate: kendo.template($("#rowTemplate-" + estimated_use).html()),
+  height: 'auto',
+        sortable: true,
+  serverSorting: false,
+  columns: [{
+      field: "plan_id",
+      title: "Compare",
+      sortable: false,
+  }, {
+      field: "company_name",
+      title: "<a class='k-link  company_sort' href='#'>Company</a>",
+      sortable: true
+  }, {
+                field: "renewable_energy_id",
+      title: "<a class='k-link  plan_details_sort' title='Sort By Renewable' href='#'>Plan Details</a>",
+      sortable: true
+  }, {
+      field: "price_kwh" + estimated_use_fake,
+      title: "<span class='price-title price_kwh1000_sort'>Price/kWh</span>",
+      sortable: true
+  }, {
+      field: "detail_kwh500", //-- min_fee_value
+      //title: "<a class='k-link  min_fee_value_sort' href='#'>Resources.Global.GridLabel_PricingDetails</a>",
+                title: "Pricing Details",
+      sortable: false //-- true
+  }, {
+        field: "sort_key",
+      title: "Ordering Info",
+      sortable: false
+  }],
+  dataBound: function (e) {
+      $('#dataTable').find("tr").addClass("active");
+      $('#dataTable').find("tr").find('.grid-element').removeClass("hide");
+
+                        //-- add tooltips to results
+      $('.tool-tip').tooltip({ placement: 'right' });
+
+      //alert($('.usagedetails-link a.link-info'));
+
+      $('.usagedetails-link a.link-info').bind('mouseover', function (e) {
+        $(this).tooltip('show');
+      });
+
+      $(".usagedetails-link a.link-info").mouseleave(function () {
+        $('.tooltip').remove();
+      });
+
+
+  }
+});
+
+$(".paging-grid").kendoPager({
+  dataSource: data_source,
+  linkTemplate: '<li><a href="\\#" data-#=ns#page="#=idx#">#=text#</a></li>',
+  selectTemplate: '<li class="current">#=text#</li>',
+  messages: {
+      display: "<span class='f-sackers-medium'>{0}-{1} of {2}</span>",
+      empty: "No Plans Found"
+  },
+  pageSizes: [10, 20, 40, 99999],
+  buttonCount: 3
+});
+
+$(".paging-grid-footer").kendoPager({
+  dataSource: data_source,
+  linkTemplate: '<li><a href="\\#" data-#=ns#page="#=idx#">#=text#</a></li>',
+  selectTemplate: '<li class="current">#=text#</li>',
+  messages: {
+      display: "<span class='f-sackers-medium'>{0}-{1} of {2}</span>",
+      empty: "No Plans Found"
+  },
+  pageSizes: [10, 20, 40, 99999],
+  buttonCount: 3
+});
+
+$(".main-col .k-grid-header").first().css('display', 'none');
+$('.main-col .k-grid-header:not(:first):not(:last)').remove();
+$('.k-grid-header-wrap th').each(function () {
+  var title = $(this).attr("data-field");
+  if (title == "plan_id")
+      $(this).addClass('item td-compare');
+  if (title == "company_name")
+      $(this).addClass('item td-company');
+  if (title == "rate_type")
+      $(this).addClass('item td-plan');
+  if (title == "price_kwh1000")
+        $(this).addClass('item td-price');
+  if (title == "pricing_details")
+      $(this).addClass('item td-details');
+});
+$(".k-grid-header-wrap th:first-child").parent().addClass('subheadings');
+$(".k-grid-header-wrap th:first-child").html('<a class="btn f-sackers-heavy" id="compare" href="#">Compare</a>');
+$('.k-pager-info').html('Loading...');
+});
+</script>
+
+                                                        <div id="pagerBottom"></div>
+              <div class="paging-box bc paging-grid-footer">
+                  <div class="sorting">
+                      <div class="item">
+                          <label class="f-sackers-heavy" for="sort2">Sort By</label>
+                          <select id="sort2" class="sort-by f-sackers-heavy">
+                              <option value="company_sort">COMPANY</option>
+                              <option value="plan_details_sort">RENEWABLE</option>
+                              <option value="price_kwh1000_sort" selected="true">PRICE/kWh</option>
+
+                          </select>
+                      </div>
+                      <div class="item">
+                          <label class="f-sackers-heavy" for="view2">View</label>
+                          <select id="view2" class="page-size-dropdown f-sackers-heavy">
+                                                                                                                <option
+value="10" selected="true">10 PER PAGE</option>
+                              <option value="20">20 PER PAGE</option>
+                              <option value="40">40 PER PAGE</option>
+                              <option value="99999">SEE ALL</option>
+                          </select>
+                      </div>
+                      <div class="item">
+                          <a target="_blank" href="javascript:;" onclick="window.print();" class="print-grid-temp" title
+="Print plan results">
+                              <img src="/Content/images/printer.png" width="16" height="16" /></a>
+                          <a target="_blank" href="javascript:;" class="export-excel" title="Export results to Excel">
+                              <img src="/Content/images/excel.png" width="16" height="16" /></a>
+                                                                                                    <a target="_blank" h
+ref="#" class="export-csv" title="Export ALL offers to CSV. Ignores search results and relation to zip code. Only export
+s the active offers by REP Company">
+
+                        <img src="/Content/images/export_csv.png" width="16" height="16" /></a>
+                      </div>
+                  </div>
+                  <div class="pages">
+                      <a class="prev" href="#"><span class="k-i-arrow-w">Prev</span></a>
+                      <ul class="f-sackers-heavy k-pager-numbers k-reset">
+                          <li class="current">1</li>
+                          <li><a href="#">2</a></li>
+                      </ul>
+                      <a class="next" href="#"><span class="k-i-arrow-e">Next</span></a>
+                  </div>
+                  <div class="nodisplay">
+                      <a class="prev" href="javascript:;"><span class="k-i-seek-w">First Page</span></a>
+                      <a class="prev" href="javascript:;"><span class="k-i-seek-e">Last Page</span></a>
+                  </div>
+              </div>
+          </div>
+
+                                </div>
+                        </form>
+    </div>
+</div>
+        </div>
+        <!-- footer -->
+        <footer id="footer">
+                <div class="shadow"></div>
+                <div class="wrapper">
+                        <img class="logo" alt="image description" src="/Content/images/logo01.png" width="107" height="1
+12">
+                        <nav class="menu f-sackers-heavy">
+                                <ul>
+                                        <li><a href="http://www.puc.texas.gov/consumer/facts/Facts.aspx" target="_blank"
+>PUC Publications</a></li>
+                                        <li><a href="/en-us/Content/Resource/Selling-Renewable-Power">Renewable Power</a
+></li>
+                                        <li><a href="/en-us/Content/Resource/Business-Non-Residential">Business</a></li>
+
+                                    <li><a href="/scorecard/Scorecard.pdf" onclick="_gaq.push(['_trackEvent', 'PTC Publi
+cations', 'Download', 'Industry Scorecard']);" target="_blank" title="Scorecard">Industry Scorecard</a></li>
+                                </ul>
+                                <ul>
+                                        <li><a href="/en-us/Content/Resource/Glossary">Glossary</a></li>
+                                        <li><a href="/en-us/Content/Resource/FAQ">FAQS</a></li>
+                                        <li><a href="/en-us/Content/Resource/About-Us">About Us</a></li>
+                                        <li><a href="/en-us/Content/ContactUs">Contact Us</a></li>
+                                        <li>
+                                                <form action="/en-us/Plan/ExportToCsv" method="post" id="footerExportCsv
+Form">
+                                                </form>
+                                                        <a href="#" class="footer-export-csv" title="Export ALL offers t
+o CSV. Ignores search results and relation to zip code. Only exports the active offers by REP Company">Export Offers</a>
+
+                                        </li>
+                    <li><a href="/Content/Files/PDF/TDUContacts.pdf" target="_blank" title="TDU">TDU Contacts</a></li>
+                    <li></li>
+
+                                </ul>
+                                <ul>
+                                        <li><a href="http://www.puc.texas.gov/" target="_blank">Public Utility Commissio
+n Of Texas</a></li>
+                                        <li><a href="http://www.powertosavetexas.org/" target="_blank">Power to Save</a>
+</li>
+                                        <li><a href="https://www.smartmetertexas.com/CAP/public/index.html" target="_bla
+nk">Smart Meter Texas</a></li>
+                                </ul>
+                        </nav>
+                        <div class="holder">
+                                <div class="social">
+                                        <div class="item">
+                                                <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.
+facebook.com%2FPowertoSaveTexas&amp;send=false&amp;layout=button_count&amp;width=200&amp;show_faces=false&amp;font=lucid
+a+grande&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflo
+w:hidden; width:117px; height:21px;" allowTransparency="true"></iframe>
+                                        </div>
+                                        <div class="item">
+                                                <a href="https://twitter.com/share" class="twitter-share-button">Tweet</
+a>
+                                        </div>
+                                </div>
+                                <div class="pdf">
+                                        <a href="http://get.adobe.com/reader/" target="_blank"><img alt="Download Adobe
+Reader" src="/Content/images/img-pdf.png" width="158" height="39"></a>
+                                </div>
+                        </div>
+                </div>
+        </footer>
+
+        <div class="jqmWindow" id="modalwindow" style="z-index:3000;display:none;"></div>
+        <div class="overlay" style="display:none;"></div>
+
+
+
+<!-- Ethnio Activation Code
+<script type="text/javascript" language="javascript" src="//ethn.io/remotes/85766.js" async="true" charset="utf-8"> </sc
+ript> -->
+
+</body>
+</html>
+
+
+
+

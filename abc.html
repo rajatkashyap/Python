@@ -1,0 +1,564 @@
+<!DOCTYPE html><html lang="en-US" ng-app="marketplace" ng-controller="PageCtrl">
+<head>
+<meta charset="UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Vw4GVVdSGwUIUFJTA
+wI="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call
+(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_requ
+ire)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&co
+nsole.log(t)}catch(e){}}var o,i=t("ee"),a=t(19),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"funct
+ion"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(
+s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r(
+"NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r
+(t,e,n,r,o){try{h?h-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}cat
+ch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaug
+ht error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}va
+r i=t("handle"),a=t(20),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,h=0;s.features.err=!0,t(1),window.onerror=r;try{th
+row new Error}catch(p){"stack"in p&&(t(12),t(11),"addEventListener"in window&&t(6),s.xhrWrappable&&t(13),u=!0)}c.on("fn-
+start",function(t,e,n){u&&(h+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&
+!this.thrown&&h>0&&(h-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t
+,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){N++,S=y.hash,this[u]=Date.now()}function o(){N--,
+y.hash!==S&&i(0,!0);var t=Date.now();this[l]=~~this[l]+t-this[u],this[h]=t}function i(t,e){x.emit("newURL",[""+y,e])}fun
+ction a(t,e){t.on(e,function(){this[e]=Date.now()})}var c="-start",s="-end",f="-body",u="fn"+c,h="fn"+s,p="cb"+c,d="cb"+
+s,l="jsTime",m="fetch",v="addEventListener",w=window,y=w.location;if(w[v]){var g=t(9),b=t(10),x=t(8),E=t(6),T=t(12),O=t(
+7),P=t(13),R=t("ee"),D=R.get("tracer");t(14),t("loader").features.spa=!0;var S,M=w[v],N=0;R.on(u,r),R.on(p,r),R.on(h,o),
+R.on(d,o),R.buffer([u,h,"xhr-done","xhr-resolved"]),E.buffer([u]),T.buffer(["setTimeout"+s,"clearTimeout"+c,u]),P.buffer
+([u,"new-xhr","open-xhr"+c]),O.buffer([m+c,m+"-done",m+f+c,m+f+s]),x.buffer(["newURL"]),g.buffer([u]),b.buffer(["propaga
+te",p,d,"executor-err","resolve"+c]),D.buffer([u,"no-"+u]),a(P,"open-xhr"+c),a(R,"xhr-resolved"),a(R,"xhr-done"),a(O,m+c
+),a(O,m+"-done"),x.on("pushState-end",i),x.on("replaceState-end",i),M("hashchange",i,!0),M("load",i,!0),M("popstate",fun
+ction(){i(0,N>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.p
+erformance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(12),c=t(11),s="learResourceTimings",f="addEventListener",u=
+"resourcetimingbufferfull",h="bstResource",p="resource",d="-start",l="-end",m="fn"+d,v="fn"+l,w="bstTimer",y="pushState"
+;t("loader").features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.n
+ow())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n)
+{this.bstStart=Date.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,
+function(){this.bstStart=Date.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o
+.on(y+d,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+l,function(t){i("bstHis
+t",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?win
+dow.performance[f](u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.p
+erformance[f]("webkit"+u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1
+)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r
+(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,h],"-",i)}funct
+ion i(t,e){return t[1]}var a=t("ee").get("events"),c=t(21)(a),s=t("gos"),f=XMLHttpRequest,u="addEventListener",h="remove
+EventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u
+)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=s(n,"nr@w
+rapped",function(){return c(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent
+&&c.inPlace(n,["handleEvent"],"fn-")}}),a.on(h+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],7:[function(t,
+e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"
+start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})}
+)}var o=t("ee").get("fetch"),i=t(19);e.exports=o;var a=window,c="fetch-",s=c+"body-",f=["arrayBuffer","blob","json","tex
+t","formData"],u=a.Request,h=a.Response,p=a.fetch,d="prototype";u&&h&&p&&(i(f,function(t,e){r(u[d],e,s),r(h[d],e,s)}),r(
+a,"fetch",c),o.on(c+"end",function(t,e){var n=this;e?e.clone().arrayBuffer().then(function(t){n.rxSize=t.byteLength,o.em
+it(c+"done",[null,e],n)}):o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(21)(r);e.ex
+ports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("mutation")
+,o=t(21)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):
+i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],10:[function(t,e,n){function r(t){var e=a.context(
+),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}functi
+on o(t,e){return e}var i=t(21),a=t("ee").get("promise"),c=i(a),s=t(19),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["a
+ll","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o]
+,i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.res
+olve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);retu
+rn t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Objec
+t.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a
+.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",functio
+n(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],
+"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("prop
+agate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function
+(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx(
+):this})}),r.toString=function(){return""+f})},{}],11:[function(t,e,n){var r=t("ee").get("raf"),o=t(21)(r),i="equestAnim
+ationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=
+o(t[0],"fn-")})},{}],12:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,thi
+s.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(21)(i),c="setTimeo
+ut",s="setInterval",f="clearTimeout",u="-start",h="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+h),a.inPlace(win
+dow,[s],s+h),a.inPlace(window,[f,"clearImmediate"],f+h),i.on(s+u,r),i.on(c+u,o)},{}],13:[function(t,e,n){function r(t,e)
+{h.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.reso
+lved=!0,u.emit("xhr-resolved",[],t)),h.inPlace(t,v,"fn-",c)}function i(t){w.push(t),l&&(g=-g,b.data=g)}function a(){for(
+var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];ret
+urn e}t(6);var f=t("ee"),u=f.get("xhr"),h=t(21)(u),p=NREUM.o,d=p.XHR,l=p.MO,m="readystatechange",v=["onload","onerror","
+onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){va
+r e=new d(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}
+}return e};if(s(d,y),y.prototype=d.prototype,h.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",func
+tion(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),l){var g=1,b=document.createTextNode(g);new l(a).observe(b,{characterDa
+ta:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],14:[function(t,e,n){function r(t){var e=this.para
+ms,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<h;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.a
+borted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);i
+f(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else
+ e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.respon
+seType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return
+ l(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin
+}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(15),f=t("ee"),u=["load","error","abort","timeout"],h=u.lengt
+h,p=t("id"),d=t(18),l=t(17),m=window.XMLHttpRequest;a.features.xhr=!0,t(13),f.on("new-xhr",function(t){var e=this;e.tota
+lCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,d&&(d>34||d<10)||window.opera||t.addEventL
+istener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(
+this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&th
+is.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=
+this.metrics,r=t[0],o=this;if(n&&r){var i=l(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=functio
+n(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=t
+ypeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<h;a++)e.addEventListener
+(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.c
+alled!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e
+){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",f
+unction(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEv
+entListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEvent
+Listener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",fu
+nction(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStar
+t=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.
+xhrCbStart,this.onload,e],e)})}},{}],15:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=windo
+w.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").po
+p().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname
+=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol|
+|e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}]
+,16:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(argume
+nts)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(19),c=t(20),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeo
+f window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace",
+"inlineHit"],h="api-",p=h+"ixn-";a(u,function(t,e){f[e]=o(h+e,!0,"api")}),f.addPageAction=o(h+"addPageAction",!0),e.expo
+rts=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this
+,o="function"==typeof e;return i(p+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now()
+,r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,i
+gnore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(p+e)}),newrelic.noticeError=function(t){"string"==typeof
+ t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],17:[function(t,e,n){e.exports=function(t){if("string"==type
+of t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.by
+teLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=type
+of FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],18:[function(t,e,n){var
+r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],19:[function(t,e,n){function r(
+t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.ex
+ports=r},{}],20:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||
+0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],21:[function(t,e,n){function r(t){return!(t&&"function"=
+=typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(20),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=functi
+on(t){function e(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}
+}catch(u){h([u,"",[r,a,o],c])}f(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(p){throw f(e+"err",[r,a,p],c),p}fin
+ally{f(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="
+");var a,c,s,f="-"===o.charAt(0);for(s=0;s<n.length;s++)c=n[s],a=t[c],r(a)||(t[c]=e(a,f?c+o:o,i,c))}function f(e,n,r){if
+(!s){s=!0;try{t.emit(e,n,r)}catch(o){h([o,e,n,r])}s=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=
+Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){retur
+n t[n]=e,e}})}),e}catch(r){h([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function h(e){try{t.emit("internal-er
+ror",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function
+ e(t){return t&&t instanceof r?t:t?c(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=p(n),c=a.length,s=0;s<c;s
+++)a[s].apply(i,r);var u=f[v[n]];return u&&u.push([w,n,r,i]),i}function h(t,e){m[t]=p(t).concat(e)}function p(t){return
+m[t]||[]}function d(t){return u[t]=u[t]||o(n)}function l(t,e){s(t,function(t,n){e=e||"feature",v[n]=e,e in f||(f[e]=[])}
+)}var m={},v={},w={on:h,emit:n,get:d,listeners:p,context:e,buffer:l};return w}function i(){return new r}var a="nr@contex
+t",c=t("gos"),s=t(19),f={},u={},h=e.exports=o();h.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))r
+eturn t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enu
+merable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){
+function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n
+){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var
+o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!g++){var t=y.info=NREUM.info,e=u.getE
+lementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(v,function(e,n){t[e]||(t[e]=n)});var n="https"==
+=m.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",c("mark",["onload",a()],null,"api");var r=u.createElement(
+"script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(
+){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(19),f=window,u=f
+.document,h="addEventListener",p="attachEvent",d=f.XMLHttpRequest,l=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeou
+t,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(16);var m=""+location,v={beacon:"bam.nr-data.net"
+,errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-974.min.js"},w=d&&l&&l[h]&&!/CriOS/.test(navigator.us
+erAgent),y=e.exports={offset:a(),origin:m,features:{},xhrWrappable:w};u[h]?(u[h]("DOMContentLoaded",i,!1),f[h]("load",r,
+!1)):(u[p]("onreadystatechange",o),f[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var g=0},{}]},{},["loader",2
+,14,5,3,4]);</script>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link href="http://gmpg.org/xfn/11" rel="profile" />
+<link href="https://www.chooseenergy.com/xmlrpc.php" rel="pingback" />
+<title>Compare Electricity suppliers, plans and prices for Chicago, IL 77459 | Choose Energy</title>
+<meta content="{{page.robots}}" name='├ó┬Ç┬£ROBOTS"' />
+<!-- Favicon links -->
+<link href="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/apple-touch-icon-57x57.png?" rel="apple-tou
+ch-icon" sizes="57x57" />
+<link href="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/apple-touch-icon-60x60.png?" rel="apple-tou
+ch-icon" sizes="60x60" />
+<link href="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/apple-touch-icon-72x72.png?" rel="apple-tou
+ch-icon" sizes="72x72" />
+<link href="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/apple-touch-icon-76x76.png?" rel="apple-tou
+ch-icon" sizes="76x76" />
+<link href="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/apple-touch-icon-114x114.png?" rel="apple-t
+ouch-icon" sizes="114x114" />
+<link href="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/apple-touch-icon-120x120.png?" rel="apple-t
+ouch-icon" sizes="120x120" />
+<link href="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/apple-touch-icon-144x144.png?" rel="apple-t
+ouch-icon" sizes="144x144" />
+<link href="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/apple-touch-icon-152x152.png?" rel="apple-t
+ouch-icon" sizes="152x152" />
+<link href="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/apple-touch-icon-180x180.png?" rel="apple-t
+ouch-icon" sizes="180x180" />
+<link href="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/favicon-32x32.png?" rel="icon" sizes="32x32
+" type="image/png" />
+<link href="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/favicon-194x194.png?" rel="icon" sizes="194
+x194" type="image/png" />
+<link href="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/favicon-96x96.png?" rel="icon" sizes="96x96
+" type="image/png" />
+<link href="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/android-chrome-192x192.png?" rel="icon" siz
+es="192x192" type="image/png" />
+<link href="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/favicon-16x16.png?" rel="icon" sizes="16x16
+" type="image/png" />
+<link href="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/manifest.json" rel="manifest" />
+<link color="#fbb431" href="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/safari-pinned-tab.svg" rel=
+"mask-icon" />
+<meta content="#da532c" name="msapplication-TileColor" />
+<meta content="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/mstile-144x144.png?" name="msapplication
+-TileImage" />
+<meta content="#ffffff" name="theme-color" />
+<!-- Google Tag Manager for WordPress by DuracellTomi - http://duracelltomi.com -->
+<script type="text/javascript">
+        var gtm4wp_datalayer_name = "dataLayer";
+        var dataLayer = dataLayer || []
+</script>
+<!-- End Google Tag Manager for WordPress by DuracellTomi -->
+<!-- This site is optimized with the Yoast SEO plugin v3.0.6 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta content="Compare Electricity suppliers, plans and prices for Chicago, IL 77459 Shop online and lower energy bills
+with Choose Energy. It's fast, easy and free." name="description" />
+<meta content="noodp" name="robots" />
+<link href="https://www.chooseenergy.com/shop/residential/electricity/TX/77459/centerpoint-energy-tx-electricity/" rel="
+canonical" />
+<link href="https://plus.google.com/u/0/+ChooseEnergy/" rel="publisher" />
+<!-- / Yoast SEO plugin. -->
+<link href="https://www.chooseenergy.com/feed/" rel="alternate" title="Choose Energy ┬╗ Feed" type="application/rss+xml"
+ />
+<link href="https://www.chooseenergy.com/comments/feed/" rel="alternate" title="Choose Energy ┬╗ Comments Feed" type="ap
+plication/rss+xml" />
+<link href="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/css/globals-for-legacy.css?ver=0.1.2" id="g
+lobals-for-legacy-css-css" media="all" rel="stylesheet" type="text/css" />
+<link href="https://www.chooseenergy.com/wp-content/shopping/styles/shopping.css?ver=0.1.2" id="shopping-css -css" media
+="all" rel="stylesheet" type="text/css" />
+<script src="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/js/rev/global.4076f3fb.js?ver=4.2.9" type=
+"text/javascript"></script>
+<script src="//cdn.optimizely.com/js/541987822.js?ver=0.1.2" type="text/javascript"></script>
+<meta content="Compare Electricity suppliers, plans and prices for Chicago, IL 77459 | Choose Energy" property="og:title
+" />
+<meta content="" property="og:image" />
+<meta content="en_US" property="og:locale" />
+<meta content="website" property="og:type" />
+<meta content="Compare Electricity suppliers, plans and prices for Chicago, IL 77459 Shop online and lower energy bills
+with Choose Energy. It's fast, easy and free." property="og:description" />
+<meta content="https://www.chooseenergy.com/shop/residential/electricity/TX/77459/centerpoint-energy-tx-electricity/" pr
+operty="og:url" />
+<meta content="Choose Energy" property="og:site_name" /><base href="https://www.chooseenergy.com/shop/" />
+<!-- Google Tag Manager for WordPress by DuracellTomi -->
+<script type="text/javascript">
+        var google_tag_params = {"visitorLoginState":"logged-out","visitorType":"visitor-logged-out","pageTitle":"Compar
+e Electricity suppliers, plans and prices for Chicago, IL 77459 | Choose Energy","pagePostType":"bloghome","browserName"
+:"","browserVersion":"","browserEngineName":"","browserEngineVersion":"","osName":"","osVersion":"","deviceType":"","dev
+iceManufacturer":"","deviceModel":"","postCountOnPage":10,"postCountTotal":350};
+        dataLayer.push({"visitorLoginState":"logged-out","visitorType":"visitor-logged-out","pageTitle":"Compare Electri
+city suppliers, plans and prices for Chicago, IL 77459 | Choose Energy","pagePostType":"bloghome","browserName":"","brow
+serVersion":"","browserEngineName":"","browserEngineVersion":"","osName":"","osVersion":"","deviceType":"","deviceManufa
+cturer":"","deviceModel":"","postCountOnPage":10,"postCountTotal":350,"google_tag_params":window.google_tag_params});
+</script></head>
+<body class="blog has-navmenu shopping-core">
+<!--[if lt IE 10]>
+    <div class="ce-bad-browser" id="ce-bad-browser">
+        <div class="bad-browser-content">
+            <div class="bad-browser-icons">
+                <img src="/wp-content/themes/ChooseEnergyTheme/images/logos/choose-energy-charcoal.png" />
+            </div>
+            <h2 class="bad-browser-text">I'm sorry, we don't support your browser.</h2>
+            <h3 class="bad-browser-text">Please download the latest version of <a href="http://windows.microsoft.com/en-
+us/internet-explorer/download-ie">Internet Explorer</a>, <a href="https://www.mozilla.org/en-US/firefox/new/">Mozilla Fi
+refox</a>, or <a href="http://www.google.com/chrome/"> Google Chrome</a>. <br/><br/> You can also call us at 855├é┬¡-419
+-3586 for assistance.</h3>
+        </div>
+    </div>
+<![endif]-->
+<noscript><iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-PZ5V6K" style="display:none;visibility:hidde
+n" width="0"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PZ5V6K');</script>
+<!-- End Google Tag Manager -->
+<div class="site-root v-fixed-header" id="site">
+<header class="ce-siteHeader " role="banner">
+<div class="ce-mainNavigation">
+<a href="https://www.chooseenergy.com">
+<img alt="Choose Energy" class="site-logo" src="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/images/
+logos/logo-choose-energy.svg" />
+</a>
+<a class="nav-trigger" href="#">
+<img alt="View Menu" src="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/images/page_assets/menu-icon.
+svg" />
+</a>
+<div class="nav-main">
+<nav class="nav-main-menu" role="navigation">
+<ul class="nav-list">
+<li>
+<a href="https://www.chooseenergy.com/">For Home</a>
+</li>
+<li>
+<a href="https://www.chooseenergy.com/for-business/">For Business</a>
+</li>
+<li class="cart">
+<a href="/shop/cart/" id="shopping-cart-link">Your Cart</a>
+</li>
+</ul>
+<ul class="nav-list">
+<li>
+<a href="https://www.chooseenergy.com/energy-choices/">Energy Choices</a>
+<ul class="sub-menu">
+<li class="nav-item">
+<a class="nav-link" href="https://www.chooseenergy.com/electricity/">Electricity</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.chooseenergy.com/natural-gas/">Natural Gas</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.chooseenergy.com/solar/">Solar</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav-list">
+<li>
+<a href="https://www.chooseenergy.com/suppliers/">Suppliers</a>
+</li>
+<li>
+<a href="https://www.chooseenergy.com/service-areas/">Service Areas</a>
+<ul class="sub-menu">
+<li class="nav-item">
+<a class="nav-link" href="https://www.chooseenergy.com/public-utility-commissions/">Public Utility Commissions</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.chooseenergy.com/utilities/">Utilities</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.chooseenergy.com/state-trend-reports/">State Trend Reports</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav-list">
+<li>
+<a href="https://www.chooseenergy.com/blog/">Choose Energy Blog</a>
+<ul class="sub-menu">
+<li class="nav-item">
+<a class="nav-link" href="https://www.chooseenergy.com/how-switching-works/">How Switching Works</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.chooseenergy.com/why-switch/">Why Switch</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.chooseenergy.com/glossary/">Energy Glossary</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.chooseenergy.com/faq/">FAQ</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav-list">
+<li>
+<a href="https://www.chooseenergy.com/about-us/">About us</a>
+<ul class="sub-menu">
+<li class="nav-item">
+<a class="nav-link" href="https://www.chooseenergy.com/about-us/team/">Team</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.chooseenergy.com/about-us/careers/">Careers</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.chooseenergy.com/about-us/press/">Press</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.chooseenergy.com/about-us/contact/">Contact</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="ce-zipSearch">
+<div class="tabs">
+<a class="tab zip-search active" href="#search-zip-home"><i class="icon ce-icon-home"></i>Home</a>
+<a class="tab zip-search inactive" href="#search-zip-business"><i class="icon ce-icon-business"></i>Business</a>
+<a class="tab shopping" href="/shop/cart/" id="shopping-cart-link">Your Cart</a>
+</div>
+<div class="tab-content">
+<form action="javascript:void(0);" class="search-form search-home active" id="search-zip-home">
+<input autofocus="autofocus" class="form-control zip-input" id="searchZipcodeRes" name="searchZipcodeRes" placeholder="E
+nter your zip code" type="tel" />
+<input id="serviceTypeRes" name="serviceTypeRes" type="hidden" value="residential" />
+<input id="productTypeRes" name="productTypeRes" type="hidden" value="electricity" />
+<button class="btn btn-search btn-angle" id="zip-search-res-submit" type="submit">Search</button>
+</form>
+<form action="javascript:void(0);" class="search-form search-business inactive" id="search-zip-business">
+<input autofocus="autofocus" class="form-control zip-input" id="searchZipcodeBiz" name="searchZipcodeBiz" placeholder="E
+nter your zip code" type="tel" />
+<div class="select-pricing-buckets">
+<select class="size-select select2-form" id="serviceTypeBiz" name="serviceTypeBiz">
+<option value="">Select average bill</option>
+<option value="smb_0">$0 ΓÇô $500 / month</option>
+<option value="smb_501">$501 ΓÇô $1500 / month</option>
+<option value="smb_1501">$1501 ΓÇô $2500 / month</option>
+<option value="smb_2501">$2501 ΓÇô $5000 / month</option>
+<option value="smb_5001">More than $5000 / month</option>
+</select>
+</div>
+<input id="productTypeBiz" name="productTypeBiz" type="hidden" value="electricity" />
+<button class="btn btn-search btn-angle" id="zip-search-biz-submit" type="submit">Search</button>
+</form>
+<a class="btn btn-search btn-wide btn-lg mobile-shop-button" href="/guide/address" id="mobile-shop-button" type="button"
+>Click to See Prices</a>
+</div>
+</div>
+</header>
+<div class="ce-marketplace">
+<div ui-view=""></div>
+<div loading-indicator=""></div>
+</div>
+<footer class="ce-siteFooter">
+<div class="site-footer-outer v-light">
+<div class="site-footer-inner ">
+<div class="nav-list v-energyTypes">
+<a class="nav-link" href="https://www.chooseenergy.com/electricity/">
+<i class="icon ce-icon-plug"></i>
+                        Electricity
+                    </a>
+<a class="nav-link" href="https://www.chooseenergy.com/natural-gas/">
+<i class="icon ce-icon-gas"></i>
+                        Natural Gas
+                    </a>
+<a class="nav-link" href="https://www.chooseenergy.com/solar/">
+<i class="icon ce-icon-solar"></i>
+                        Solar
+                    </a>
+</div>
+<div class="telephone">
+                Call us <a href="tel:8007792545">(800) 779 - 2545</a>
+</div>
+</div>
+</div>
+<div class="site-footer-outer v-dark">
+<div class="site-footer-inner">
+<div class="footer-menu">
+<div class="footer-links v-about">
+<h5><a href="https://www.chooseenergy.com/about-us/">About Us</a></h5>
+<div class="nav-list">
+<a class="nav-link" href="https://www.chooseenergy.com/about-us/team/">Team</a>
+<a class="nav-link" href="https://www.chooseenergy.com/about-us/careers/">Careers</a>
+<a class="nav-link" href="https://www.chooseenergy.com/about-us/press/">Press</a>
+<a class="nav-link" href="https://www.chooseenergy.com/about-us/contact/">Contact</a>
+<a class="nav-link" href="https://www.chooseenergy.com/energy-broker-partners/">For Brokers & Agents</a>
+</div>
+</div>
+<div class="footer-links v-service">
+<h5><a href="https://www.chooseenergy.com/service-areas/">Service Areas</a></h5>
+<div class="nav-list">
+<a class="nav-link" href="https://www.chooseenergy.com/california/">California</a>
+<a class="nav-link" href="https://www.chooseenergy.com/connecticut/">Connecticut</a>
+<a class="nav-link" href="https://www.chooseenergy.com/illinois/">Illinois</a>
+<a class="nav-link" href="https://www.chooseenergy.com/maine/">Maine</a>
+<a class="nav-link" href="https://www.chooseenergy.com/maryland/">Maryland</a>
+<a class="nav-link" href="https://www.chooseenergy.com/massachusetts/">Massachusetts</a>
+<a class="nav-link" href="https://www.chooseenergy.com/michigan/">Michigan</a>
+<a class="nav-link" href="https://www.chooseenergy.com/new-hampshire/">New Hampshire</a>
+<a class="nav-link" href="https://www.chooseenergy.com/new-jersey/">New Jersey</a>
+<a class="nav-link" href="https://www.chooseenergy.com/new-york/">New York</a>
+<a class="nav-link" href="https://www.chooseenergy.com/ohio/">Ohio</a>
+<a class="nav-link" href="https://www.chooseenergy.com/pennsylvania/">Pennsylvania</a>
+<a class="nav-link" href="https://www.chooseenergy.com/texas/">Texas</a>
+<a class="nav-link" href="https://www.chooseenergy.com/washington-dc/">Washington, D.C.</a>
+</div>
+</div>
+<div class="footer-links v-blog">
+<h5><a href="https://www.chooseenergy.com/blog/">Blog</a></h5>
+<div class="nav-list">
+<a class="nav-link" href="https://www.chooseenergy.com/blog/category/energy-news/">Energy News</a>
+<a class="nav-link" href="https://www.chooseenergy.com/blog/category/energy-101/">Energy 101</a>
+<a class="nav-link" href="https://www.chooseenergy.com/blog/category/energy-tips/">Energy Tips</a>
+<a class="nav-link" href="https://www.chooseenergy.com/blog/category/renewable-energy/">Renewable Energy</a>
+<a class="nav-link" href="https://www.chooseenergy.com/blog/category/energy-efficiency/">Energy Efficiency</a>
+<a class="nav-link" href="https://www.chooseenergy.com/blog/category/energy-innovation/">Energy Innovation</a>
+<a class="nav-link" href="https://www.chooseenergy.com/why-switch/">Why Switch</a>
+<a class="nav-link" href="https://www.chooseenergy.com/how-switching-works/">How Switching Works</a>
+</div>
+</div>
+</div>
+<div class="footer-links v-social">
+<a class="social-item" href="https://www.facebook.com/ChooseEnergy" target="_blank"><i class="fa fa-facebook"></i></a>
+<a class="social-item" href="https://twitter.com/ChooseEnergy" target="_blank"><i class="fa fa-twitter"></i></a>
+<a class="social-item" href="https://plus.google.com/+ChooseEnergy" target="_blank"><i class="fa fa-google-plus"></i></a
+>
+<a class="social-item" href="https://www.linkedin.com/company/chooseenergy-com" target="_blank"><i class="fa fa-linkedin
+"></i></a>
+</div>
+<div class="footer-links v-copyright">
+<p itemprop="organization" itemscope="" itemtype="http://schema.org/Organization">
+<link href="https://www.chooseenergy.com/wp-content/themes/ChooseEnergyTheme/images/logos/logo-choose-energy.svg" itempr
+op="logo" />
+<link href="https://www.chooseenergy.com" itemprop="url" />
+<span itemprop="name">Choose Energy, Inc.</span>
+<span itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+<span itemprop="streetAddress">465 California St, Suite 1250</span>,
+                        <span itemprop="addressLocality">San Francisco</span>,
+                        <span itemprop="addressRegion">CA</span>
+<span itemprop="postalCode">94104</span>
+</span>
+<meta content="(800) 532-8856" itemprop="telephone" />
+</p>
+<a class="nav-link" href="https://www.chooseenergy.com/privacy-policy/">Privacy Policy</a>
+<a class="nav-link" href="https://www.chooseenergy.com/terms-of-use/">Terms of Use</a>
+<a class="nav-link" href="https://www.chooseenergy.com/sitemap/">Sitemap</a>
+</div>
+<div class="footer-links v-seals">
+<a class="bbb-seal ruvtbus" href="http://www.bbb.org/dallas/business-reviews/electric-companies/choose-energy-in-plano-t
+x-90234931#bbbseal" id="bbblink" target="_blank" title="Choose Energy, Inc. is a BBB Accredited Electric Company in Plan
+o, TX"><img alt="Choose Energy, Inc. is a BBB Accredited Electric Company in Plano, TX" id="bbblinkimg" src="https://sea
+l-dallas.bbb.org/logo/ruvtbus/choose-energy-90234931.png" /></a><script async="" type="text/javascript">var bbbprotocol
+= ( ("https:" == document.location.protocol) ? "https://" : "http://" ); document.write(unescape("%3Cscript src='" + bbb
+protocol + 'seal-dallas.bbb.org' + unescape('%2Flogo%2Fchoose-energy-90234931.js') + "' async type='text/javascript'%3E%
+3C/script%3E"));</script>
+<span class="secure-seal" id="siteseal"><img alt="GoDaddy Site Seal" src="https://www.chooseenergy.com/wp-content/themes
+/ChooseEnergyTheme/images/page_assets/siteseal_gd_3_h_d_m.gif" /></span>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<!-- begin olark code -->
+<script data-cfasync="false" type="text/javascript">/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.
+location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
+                f[z]=function(){
+                (a.s=a.s||[]).push(arguments)};var a=f[z]._={
+                },q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
+                f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
+                0:+new Date};a.P=function(u){
+                a.p[u]=new Date-a.p[0]};function s(){
+                a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(
+){function p(hd){
+                hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j
+,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
+                return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h]
+(z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder
+="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
+                b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
+                b.contentWindow[g].open()}catch(w){
+                c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
+                var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
+                b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
+                loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","ide
+ntify"]});
+                /* custom configuration goes here (www.olark.com/documentation) */
+                olark.identify('1092-888-10-3385');/*]]>*/</script><noscript><a href="https://www.olark.com/site/1092-88
+8-10-3385/contact" target="_blank" title="Contact us">Questions? Feedback?</a> powered by <a href="http://www.olark.com?
+welcome" title="Olark live chat software">Olark live chat software</a></noscript>
+<!-- end olark code -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var shop_data = {"path":"https:\/\/www.chooseenergy.com\/wp-content\/shopping"};
+/* ]]> */
+</script>
+<script src="https://www.chooseenergy.com/wp-content/shopping/scripts/vendor.js?ver=0.1.2" type="text/javascript"></scri
+pt>
+<script src="https://www.chooseenergy.com/wp-content/shopping/scripts/scripts.js?ver=0.1.2" type="text/javascript"></scr
+ipt>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAarfR2eRjTtfdO0kMoBHjUTFn4mitRXA0&amp;libraries=places" t
+ype="text/javascript"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"072b3ac3b9"
+,"applicationID":"6843143","transactionName":"MVVSY0RQWEAAUhJZVggfZUVfHhlaD1UDSBcWWEA=","queueTime":0,"applicationTime":
+1822,"atts":"HRJRFQxKS04=","errorBeacon":"bam.nr-data.net","agent":""}</script><script type="text/javascript">
+//<![CDATA[
+(function() {
+var _analytics_scr = document.createElement('script');
+_analytics_scr.type = 'text/javascript'; _analytics_scr.async = true; _analytics_scr.src = '/_Incapsula_Resource?SWJIYLW
+A=2977d8d74f63d7f8fedbea018b7a1d05&ns=1';
+var _analytics_elem = document.getElementsByTagName('script')[0]; _analytics_elem.parentNode.insertBefore(_analytics_scr
+, _analytics_elem);
+})();
+// ]]>
+</script></body>
+</html>

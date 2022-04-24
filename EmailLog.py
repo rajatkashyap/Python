@@ -1,0 +1,16 @@
+f=open('EmailLog.txt')
+#log=log.split('\n')
+f1=open('EmailList.txt','w')
+
+for line in f:
+	line=line.strip()
+	atpos=line.find(' ')
+	topos=line.find(' ',atpos+1)
+	#f1.writelines(line[atpos+1:topos])
+	f1.write(line[atpos+1:topos])
+	#f1.write('\n')
+	cont=line.split()
+	email=cont[1].split('@')
+	f1.write(" Email with Domain: ")
+	f1.write(email[1])
+	f1.write('\n')
