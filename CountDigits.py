@@ -1,5 +1,5 @@
 from collections import OrderedDict
-l=[1,2,2,1,6,1,2,5,4,2,3]
+l=[1,2,2,1,6,1,2,5,4,2,3,6]
 #print l
 d=OrderedDict()
 count=0
